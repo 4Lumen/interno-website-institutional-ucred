@@ -82,3 +82,31 @@
   ::-webkit-scrollbar-thumb {
     @apply bg-zinc-600
   }
+
+  .container {
+    @apply max-w-7xl mx-auto px-4
+  }
+
+  .custom-pagination-adv span{
+    width: 26px;
+    height: 3px;
+    background-color: #172d63;
+    border-radius: 10rem;
+  }
+  
+  .custom-pag-main span {
+    width: 2.5rem;
+    height: 0.2rem;
+    background-color: white;
+    border-radius: 10rem;
+  }
+
+  .custom-pag-advantages span {
+    height: 0.2rem;
+
+    @apply bg-primary rounded-2xl w-[1.5rem] md:w-[2.5rem];
+  }
+
+  ::selection {
+    @apply bg-primary text-white
+  }

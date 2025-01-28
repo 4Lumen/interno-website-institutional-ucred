@@ -18,6 +18,11 @@ module.exports = {
       fontSize: {
         xxs: '0.625rem',
       },
+      backgroundImage: {
+        banner: 'url(/backgrounds/banner-background.png)',
+        benefits: 'url(/backgrounds/benefits-background.png)',
+        about: 'url(/backgrounds/about-background.png)',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -25,12 +30,15 @@ module.exports = {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
+          DEFAULT: '#172B5C',
+          lighter: '#213A75',
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
+          1: '#C2890B',
+          2: '#F8DE7A',
+          3: '#C1880A',
+          4: '#D4AF37',
+          DEFAULT: '#c2880a',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
@@ -60,12 +68,20 @@ module.exports = {
       },
       keyframes: {
         'accordion-down': {
-          from: { height: '0' },
-          to: { height: 'var(--radix-accordion-content-height)' },
+          from: {
+            height: '0',
+          },
+          to: {
+            height: 'var(--radix-accordion-content-height)',
+          },
         },
         'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' },
+          from: {
+            height: 'var(--radix-accordion-content-height)',
+          },
+          to: {
+            height: '0',
+          },
         },
       },
       animation: {
