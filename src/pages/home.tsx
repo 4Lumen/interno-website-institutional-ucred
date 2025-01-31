@@ -340,9 +340,9 @@ export function Home() {
                   </Reveal>
                 </div>
 
-                <div className="flex h-full w-full flex-[1.2] items-end">
+                <div className="h-full w-full flex-[1.2] items-end lg:hidden xl:flex">
                   <img
-                    src="/banner-hero-test.png"
+                    src="/banner-hero.png"
                     className="h-full w-full object-contain object-bottom"
                     alt="Imagem de um homem no computador"
                   />
@@ -388,9 +388,9 @@ export function Home() {
 
                 <div className="flex h-full w-full flex-[1.2] items-end">
                   <img
-                    src="/banner-hero-test.png"
-                    className="h-full w-full object-contain object-bottom"
+                    src="/banner-hero-2.png"
                     alt="Imagem de um homem no computador"
+                    className="h-full w-full object-contain object-bottom"
                   />
                 </div>
               </div>
