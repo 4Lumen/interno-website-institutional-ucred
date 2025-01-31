@@ -342,8 +342,8 @@ export function Home() {
 
                 <div className="flex h-full w-full flex-[1.2] items-end">
                   <img
-                    src="/banner-hero-2.png"
-                    className="h-full w-full object-cover object-top"
+                    src="/banner-hero-test.png"
+                    className="h-full w-full object-contain object-bottom"
                     alt="Imagem de um homem no computador"
                   />
                 </div>
@@ -388,8 +388,8 @@ export function Home() {
 
                 <div className="flex h-full w-full flex-[1.2] items-end">
                   <img
-                    src="/banner-hero-2.png"
-                    className="h-full w-full object-cover object-top"
+                    src="/banner-hero-test.png"
+                    className="h-full w-full object-contain object-bottom"
                     alt="Imagem de um homem no computador"
                   />
                 </div>
