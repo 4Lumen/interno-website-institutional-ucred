@@ -84,7 +84,7 @@
   }
 
   .container {
-    @apply max-w-7xl mx-auto px-4
+    @apply max-w-[87.5rem] mx-auto px-4
   }
 
   .custom-pagination-adv span{

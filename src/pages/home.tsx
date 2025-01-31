@@ -288,7 +288,7 @@ export function Home() {
         </div>
       </header>
 
-      <section className="bg-primary bg-banner bg-cover bg-center bg-no-repeat py-12 lg:h-[calc(48rem-5rem)] lg:py-0">
+      <section className="bg-primary bg-banner bg-cover bg-center bg-no-repeat py-12 lg:h-[calc(45rem-5rem)] lg:py-0">
         <div className="relative h-full">
           <Swiper
             slidesPerView={1}
@@ -340,14 +340,12 @@ export function Home() {
                   </Reveal>
                 </div>
 
-                <div className="w-full flex-1">
-                  <Reveal>
-                    <img
-                      src="/banner-hero.png"
-                      className="h-full w-full bg-contain"
-                      alt="Imagem de um homem no computador"
-                    />
-                  </Reveal>
+                <div className="flex h-full w-full flex-[1.2] items-end">
+                  <img
+                    src="/banner-hero-2.png"
+                    className="h-full w-full object-cover object-top"
+                    alt="Imagem de um homem no computador"
+                  />
                 </div>
               </div>
             </SwiperSlide>
@@ -388,14 +386,12 @@ export function Home() {
                   </Reveal>
                 </div>
 
-                <div className="w-full flex-1">
-                  <Reveal>
-                    <img
-                      src="/banner-hero-2.png"
-                      className="h-full w-full bg-contain"
-                      alt="Imagem de um homem no computador"
-                    />
-                  </Reveal>
+                <div className="flex h-full w-full flex-[1.2] items-end">
+                  <img
+                    src="/banner-hero-2.png"
+                    className="h-full w-full object-cover object-top"
+                    alt="Imagem de um homem no computador"
+                  />
                 </div>
               </div>
             </SwiperSlide>
@@ -489,9 +485,9 @@ export function Home() {
           </div>
           <div className="flex w-full flex-1 items-center justify-center bg-primary bg-about bg-cover bg-center bg-no-repeat pt-4 md:max-h-[29rem]">
             <img
-              alt="Imagem de uma família feliz"
-              src="/imagens/homem-segurando-celular.png"
-              className="pointer-events-none h-full w-full select-none object-contain"
+              alt="Imagem uma mulher no telefone"
+              src="/imagens/mulher-telefone.png"
+              className="pointer-events-none h-full w-full select-none object-cover object-bottom"
             />
           </div>
         </div>
@@ -778,7 +774,7 @@ export function Home() {
               defaultValue="item-1"
             >
               <AccordionItem value="item-1">
-                <AccordionTrigger>
+                <AccordionTrigger className="text-left">
                   Como tirar a segunda via do boleto?
                 </AccordionTrigger>
                 <AccordionContent>
@@ -794,7 +790,7 @@ export function Home() {
               </AccordionItem>
 
               <AccordionItem value="item-2">
-                <AccordionTrigger>
+                <AccordionTrigger className="text-left">
                   Como fazer antecipação do pagamento?
                 </AccordionTrigger>
                 <AccordionContent>
@@ -803,7 +799,7 @@ export function Home() {
                     boleto de antecipação único
                   </p>
 
-                  <div className="mt-4 flex items-center gap-5">
+                  <div className="mt-4 flex flex-col gap-5 md:flex-row md:items-center">
                     <div className="flex items-center gap-2">
                       <div className="shrink-0 rounded-lg bg-primary p-3 text-white">
                         <PhoneIcon className="size-4" />
@@ -831,7 +827,7 @@ export function Home() {
               </AccordionItem>
 
               <AccordionItem value="item-3">
-                <AccordionTrigger>
+                <AccordionTrigger className="text-left">
                   Como fazer a atualização de um boleto
                 </AccordionTrigger>
                 <AccordionContent>
@@ -849,7 +845,7 @@ export function Home() {
               </AccordionItem>
 
               <AccordionItem value="item-4">
-                <AccordionTrigger>
+                <AccordionTrigger className="text-left">
                   Como proceder em caso de cancelamento do contrato
                 </AccordionTrigger>
                 <AccordionContent>
@@ -860,7 +856,7 @@ export function Home() {
                     Em caso de dúvidas procurar o setor administrativo da Ucred
                   </p>
 
-                  <div className="mt-4 flex items-center gap-5">
+                  <div className="mt-4 flex flex-col gap-5 md:flex-row md:items-center">
                     <div className="flex items-center gap-2">
                       <div className="shrink-0 rounded-lg bg-primary p-3 text-white">
                         <PhoneIcon className="size-4" />
@@ -888,7 +884,7 @@ export function Home() {
               </AccordionItem>
 
               <AccordionItem value="item-5">
-                <AccordionTrigger>
+                <AccordionTrigger className="text-left">
                   Como proceder em caso de negativa de crédito?
                 </AccordionTrigger>
                 <AccordionContent>
@@ -923,7 +919,7 @@ export function Home() {
             </Reveal>
 
             <Reveal>
-              <div className="mt-4 flex w-full items-center justify-between rounded-md bg-primary-lighter p-3">
+              <div className="mt-4 flex w-full items-center justify-between gap-5 rounded-md bg-primary-lighter p-3">
                 <h1 className="text-sm font-semibold text-white">
                   Rua Emiliano Perneta, 424 - Conj. 21/22 - Centro - Curitiba -
                   PR
