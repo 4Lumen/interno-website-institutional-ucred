@@ -99,12 +99,18 @@ export function CreditoParaEmpresaPage() {
 
       <section>
         <div className="container py-14">
-          <div className="flex flex-col gap-20 border-b-2 pb-10 lg:flex-row lg:items-start">
+          <div className="flex flex-col gap-5 border-b-2 pb-10 md:gap-20 lg:flex-row lg:items-start">
             <div>
-              <Reveal>
-                <h2 className="mt-3 text-3xl font-extrabold text-zinc-600 lg:text-4xl xl:text-5xl">
+              <Reveal classes="hidden md:block">
+                <h2 className="mt-3 text-2xl font-extrabold text-zinc-600 lg:text-4xl xl:text-5xl">
                   Chegou a hora de trazer <br /> mais benefícios para sua
                   empresa
+                </h2>
+              </Reveal>
+
+              <Reveal classes="block md:hidden">
+                <h2 className="mt-3 text-2xl font-extrabold text-zinc-600 lg:text-4xl xl:text-5xl">
+                  Chegou a hora de trazer mais benefícios para sua empresa
                 </h2>
               </Reveal>
               <Reveal>
@@ -147,7 +153,7 @@ export function CreditoParaEmpresaPage() {
                 to="/cadastro-loja.pdf"
                 target="_blank"
                 className={cn(
-                  'text-md mt-5 flex shrink-0 items-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0',
+                  'text-md flex shrink-0 items-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0 md:mt-5',
                 )}
                 title="Clique para cadastrar minha empresa"
               >

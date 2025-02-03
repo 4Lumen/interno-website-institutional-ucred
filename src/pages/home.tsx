@@ -242,7 +242,7 @@ export function Home() {
               </span>
             </Reveal>
             <Reveal>
-              <h2 className="mt-3 text-3xl font-extrabold text-zinc-600 lg:text-4xl xl:text-5xl">
+              <h2 className="mt-3 text-2xl font-extrabold text-zinc-600 lg:text-4xl xl:text-5xl">
                 Na UCRED você pode <br /> confiar de olhos fechados
               </h2>
             </Reveal>
@@ -443,7 +443,7 @@ export function Home() {
           <div className="after:content=['*'] via-88% relative flex flex-col gap-1 from-secondary-1 via-secondary-2 via-50% to-secondary text-white after:absolute after:h-full after:w-1 after:bg-gradient-to-b">
             <Reveal>
               <h2 className="pl-4 text-2xl font-bold md:pl-8 md:text-4xl">
-                Perfeito para vários segmentos
+                Perfeito para <br /> vários segmentos
               </h2>
             </Reveal>
             <Reveal>

@@ -100,10 +100,10 @@ export function EmprestimoPessoalPage() {
 
       <section>
         <div className="container py-14">
-          <div className="flex flex-col gap-20 border-b-2 pb-10 lg:flex-row lg:items-end">
+          <div className="flex flex-col gap-5 border-b-2 pb-10 md:gap-20 lg:flex-row lg:items-end">
             <div>
               <Reveal>
-                <h2 className="mt-3 text-3xl font-extrabold text-zinc-600 lg:text-4xl xl:text-5xl">
+                <h2 className="mt-3 text-2xl font-extrabold text-zinc-600 lg:text-4xl xl:text-5xl">
                   Chegou a hora de <br /> realizar o grande sonho
                 </h2>
               </Reveal>
@@ -133,7 +133,7 @@ export function EmprestimoPessoalPage() {
                 to="https://www3.ucred.net.br/novo-cliente"
                 target="_blank"
                 className={cn(
-                  'text-md mt-5 flex shrink-0 items-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0',
+                  'text-md flex shrink-0 items-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0 md:mt-5',
                 )}
                 title="Clique para solicitar meu empréstimo"
               >
