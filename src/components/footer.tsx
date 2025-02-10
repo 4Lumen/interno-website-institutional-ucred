@@ -1,5 +1,12 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { format } from 'date-fns'
-import { MailIcon, PhoneIcon, SendHorizonalIcon } from 'lucide-react'
+import {
+  ChevronDown,
+  MailIcon,
+  PhoneIcon,
+  SendHorizonalIcon,
+} from 'lucide-react'
+import { useRef, useState } from 'react'
 import { PiFacebookLogo, PiInstagramLogo, PiWhatsappLogo } from 'react-icons/pi'
 import { Link, useLocation } from 'react-router-dom'
 
@@ -15,6 +22,10 @@ import { Button } from './ui/button'
 
 export function Footer() {
   const { pathname } = useLocation()
+  const refData: any = useRef()
+  const refDataButton: any = useRef()
+
+  const [hasToggleData, setHasToggleData] = useState(false)
 
   return (
     <>
@@ -517,45 +528,88 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-t-primary-lighter">
-          <div className="container py-4">
-            <p className="text-xs text-zinc-100">
-              IWF Serviços de Apoio Administrativo - Eireli, com nome fantasia
-              UCRED, inscrita no CNPJ sob nº 06.376.451/0001-04, com sede na Rua
-              Emiliano Perneta, 424 - Conj. 21/22, Centro, Curitiba - PR.
-              <br />
-              <br />
-              A UCRED não é uma financeira; somos um correspondente bancário da
-              Giro Sociedade de Crédito Direto S/A, inscrita no CNPJ sob nº
-              40.112.555/0001-40, com sede na Rua Visconde do Rio Branco, 1488 -
-              Sala 1006, Centro, Curitiba - PR.
-              <br />
-              <br />
-              A UCRED não cobra nenhum valor antecipado para aprovar ou
-              depositar seu crédito. Caso você seja contatado por alguém se
-              passando pela UCRED e cobrando qualquer valor antecipado, encerre
-              o contato imediatamente e fale conosco. Você pode estar sendo
-              vítima de uma tentativa de fraude.
-              <br />
-              <br />
-              O atraso no pagamento das parcelas do seu empréstimo pessoal pode
-              resultar na inclusão do seu nome nos cadastros de inadimplentes
-              dos órgãos de proteção ao crédito, protesto de títulos e, ainda,
-              no ajuizamento de ações judiciais de cobrança, entre outras
-              medidas. Para evitar problemas e restrições ao seu crédito,
-              mantenha sempre o pagamento das suas parcelas em dia.
-              <br />
-              <br />
-              Condições do crédito: nosso prazo mínimo é de 3 meses e máximo de
-              24 meses. Nossa taxa de juros varia de 5,99% a 18,9% ao mês (149%
-              a 376,74% ao ano).
-              <br />
-              <br />
-              Exemplo de simulação: empréstimo de R$ 1.500,00, parcelado em 24
-              meses, com taxa de 13,90% ao mês (376,74% ao ano). Total de 24
-              parcelas de R$ 224,40. Valor total a pagar: R$ 5.385,60.
-            </p>
-          </div>
+        <div
+          ref={refDataButton}
+          className="flex justify-center border-t border-t-primary-lighter py-4"
+        >
+          <Button
+            type="button"
+            className="bg-transparent text-white"
+            onClick={() => {
+              setHasToggleData(!hasToggleData)
+
+              if (hasToggleData) {
+                setTimeout(() => {
+                  window.scroll({
+                    behavior: 'smooth',
+                    top: refDataButton.current.offsetTop,
+                  })
+                }, 100)
+              } else {
+                setTimeout(() => {
+                  window.scroll({
+                    behavior: 'smooth',
+                    top: refData.current.offsetTop,
+                  })
+                }, 100)
+              }
+            }}
+          >
+            <ChevronDown
+              className={cn(
+                'mr-2 size-4',
+                hasToggleData && 'rotate-180 transition-all',
+              )}
+            />{' '}
+            Visualizar dados da UCRED
+          </Button>
+        </div>
+
+        <div ref={refData}>
+          {hasToggleData && (
+            <div className="border-t border-t-primary-lighter">
+              <div className="container py-4">
+                <p className="text-xs text-zinc-100">
+                  IWF Serviços de Apoio Administrativo - Eireli, com nome
+                  fantasia UCRED, inscrita no CNPJ sob nº 06.376.451/0001-04,
+                  com sede na Rua Emiliano Perneta, 424 - Conj. 21/22, Centro,
+                  Curitiba - PR.
+                  <br />
+                  <br />
+                  A UCRED não é uma financeira; somos um correspondente bancário
+                  da Giro Sociedade de Crédito Direto S/A, inscrita no CNPJ sob
+                  nº 40.112.555/0001-40, com sede na Rua Visconde do Rio Branco,
+                  1488 - Sala 1006, Centro, Curitiba - PR.
+                  <br />
+                  <br />
+                  A UCRED não cobra nenhum valor antecipado para aprovar ou
+                  depositar seu crédito. Caso você seja contatado por alguém se
+                  passando pela UCRED e cobrando qualquer valor antecipado,
+                  encerre o contato imediatamente e fale conosco. Você pode
+                  estar sendo vítima de uma tentativa de fraude.
+                  <br />
+                  <br />
+                  O atraso no pagamento das parcelas do seu empréstimo pessoal
+                  pode resultar na inclusão do seu nome nos cadastros de
+                  inadimplentes dos órgãos de proteção ao crédito, protesto de
+                  títulos e, ainda, no ajuizamento de ações judiciais de
+                  cobrança, entre outras medidas. Para evitar problemas e
+                  restrições ao seu crédito, mantenha sempre o pagamento das
+                  suas parcelas em dia.
+                  <br />
+                  <br />
+                  Condições do crédito: nosso prazo mínimo é de 3 meses e máximo
+                  de 24 meses. Nossa taxa de juros varia de 5,99% a 18,9% ao mês
+                  (149% a 376,74% ao ano).
+                  <br />
+                  <br />
+                  Exemplo de simulação: empréstimo de R$ 1.500,00, parcelado em
+                  24 meses, com taxa de 13,90% ao mês (376,74% ao ano). Total de
+                  24 parcelas de R$ 224,40. Valor total a pagar: R$ 5.385,60.
+                </p>
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="flex flex-col items-center justify-center border-t border-t-primary-lighter py-4 text-xs text-white lg:flex-row">

@@ -42,28 +42,29 @@ export function CreditoParaEsteticaPage() {
           <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
             <div className="w-full flex-[1.2]">
               <Reveal classes="hidden md:block">
-                <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl xl:text-6xl xl:leading-[4rem]">
-                  Mais pacientes para a sua{' '}
+                <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl xl:text-5xl xl:leading-[3.2rem]">
+                  O sucesso da sua{' '}
                   <span className="bg-gradient-to-r from-secondary-1 via-secondary-3 to-secondary-4 bg-clip-text text-transparent">
-                    clínica de estética
-                  </span>
+                    clínica <br /> de estética
+                  </span>{' '}
+                  está aqui!
                 </h2>
               </Reveal>
 
               <Reveal classes="block md:hidden">
                 <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl xl:text-6xl xl:leading-[4rem]">
-                  Mais pacientes para <br /> a sua{' '}
+                  O sucesso da sua{' '}
                   <span className="bg-gradient-to-r from-secondary-1 via-secondary-3 to-secondary-4 bg-clip-text text-transparent">
-                    clínica de estética
-                  </span>
+                    clínica <br /> de estética
+                  </span>{' '}
+                  está aqui!
                 </h2>
               </Reveal>
 
               <Reveal>
                 <p className="mt-4 text-lg text-zinc-200 md:text-xl lg:text-xl">
-                  Se você está buscando aumentar os lucros da sua clínica de
-                  estética, além de oferecer mais vantagens de pagamento para os
-                  seus clientes, conte com a gente.
+                  Facilite o pagamento para seus clientes, aumente a fidelização
+                  e veja seus lucros crescerem com a Ucred ao seu lado.
                 </p>
               </Reveal>
 
@@ -102,28 +103,26 @@ export function CreditoParaEsteticaPage() {
             <div>
               <Reveal classes="hidden md:block">
                 <h2 className="mt-3 text-2xl font-extrabold text-zinc-600 lg:text-4xl xl:text-5xl">
-                  Chegou a hora de <br /> crescer a sua clínica de estética
+                  Chegou a hora de fazer <br /> sua clínica de estética crescer!
                 </h2>
               </Reveal>
 
               <Reveal classes="block md:hidden">
                 <h2 className="mt-3 text-2xl font-extrabold text-zinc-600 lg:text-4xl xl:text-5xl">
-                  Chegou a hora de crescer a sua clínica de estética
+                  Chegou a hora de fazer sua clínica de estética crescer!
                 </h2>
               </Reveal>
               <Reveal>
                 <p className="mt-4 text-lg font-medium text-zinc-600">
-                  A Ucred Serviços Financeiros disponibiliza soluções para que
-                  sua clínica de estética disponibilize mais facilidade para os
-                  seus pacientes na hora de fechar os pacotes e sessões de
-                  tratamento.
+                  A Ucred Serviços Financeiros oferece soluções para que sua
+                  clínica aumente as vendas, fidelize clientes e facilite o
+                  pagamento de pacotes e sessões de tratamento.
                   <br />
                   <br />
-                  Isso é possível mesmo que a clínica de estética credenciada
-                  parcele em 10x um serviço, já que ela receberá o valor
-                  antecipadamente no dia útil seguinte, evitando casos de
-                  inadimplência, problemas no fluxo de caixa e pagamentos de
-                  contas internas.
+                  Com nosso suporte, você parcela o pagamento para seus
+                  clientes, mas recebe o valor integral já no próximo dia útil.
+                  Isso significa mais segurança financeira, menos inadimplência
+                  e um fluxo de caixa sempre saudável.
                 </p>
               </Reveal>
             </div>

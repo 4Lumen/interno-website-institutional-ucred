@@ -107,7 +107,7 @@ export function Home() {
                   </Reveal>
                 </div>
 
-                <div className="h-full w-full flex-[1.2] items-end lg:hidden xl:flex">
+                <div className="flex h-full w-full flex-[1.2] items-end">
                   <img
                     src="/banner-hero.png"
                     className="h-full w-full object-contain object-bottom"
@@ -142,20 +142,15 @@ export function Home() {
                   </Reveal>
 
                   <Reveal>
-                    <Button
-                      type="button"
-                      onClick={() =>
-                        window.scroll({
-                          behavior: 'smooth',
-                          top: 500,
-                        })
-                      }
-                      title="Clique para saber mais"
-                      className="text-md mt-6 rounded-xl bg-white px-8 py-6 text-primary transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white"
+                    <Link
+                      target="_blank"
+                      title="Clique para falar conosco"
+                      to="https://api.whatsapp.com/send?phone=554131954559&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+                      className="text-md mt-6 inline-flex items-center rounded-xl bg-white px-8 py-3 text-primary transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white"
                     >
                       <PlusIcon className="mr-2 size-4" />
                       Fale conosco
-                    </Button>
+                    </Link>
                   </Reveal>
                 </div>
 
