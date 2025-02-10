@@ -108,5 +108,5 @@
   }
 
   ::selection {
-    @apply bg-primary text-white
+    @apply bg-primary-lighter text-white
   }

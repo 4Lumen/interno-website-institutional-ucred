@@ -33,7 +33,7 @@ export function CreditoParaEmpresaPage() {
 
   return (
     <main className="min-h-screen w-full">
-      <Helmet title="Crédito para empresa" />
+      <Helmet title="CDC para empresas" />
 
       <Header />
 

@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { createBrowserRouter } from 'react-router-dom'
 
-import { CreditoParaEmpresaPage } from '../pages/(credito-para-empresa)/page'
+import { CreditoParaEmpresaPage } from '../pages/(cdc-para-empresas)/page'
 import { CreditoParaEsteticaPage } from '../pages/(credito-para-estetica)/page'
 import { EmprestimoPessoalPage } from '../pages/(emprestimo-pessoal)/page'
 import { PoliticaDeCookiesPage } from '../pages/(politicas)/politica-de-cookies/page'
@@ -20,7 +20,7 @@ const router: any = createBrowserRouter([
     element: <CreditoParaEsteticaPage />,
   },
   {
-    path: '/credito-para-empresa',
+    path: '/cdc-para-empresas',
     element: <CreditoParaEmpresaPage />,
   },
   {

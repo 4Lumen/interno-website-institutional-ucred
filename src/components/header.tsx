@@ -71,14 +71,14 @@ export function Header() {
               title="Clique para ir na tela de início"
             >
               <img
-                src="/logo-color.svg"
+                src="/logo-color.png"
                 alt="Logo da UCRED"
-                className="h-14 select-none"
+                className="h-32 select-none"
               />
             </Link>
           ) : (
             <Link title="Clique para ir na tela de início" to="/">
-              <img src="/logo.svg" alt="Logo da UCRED" className="h-14" />
+              <img src="/logo-white.png" alt="Logo da UCRED" className="h-32" />
             </Link>
           )}
 
@@ -111,15 +111,15 @@ export function Header() {
             </Link>
 
             <Link
-              to="/credito-para-empresa"
+              to="/cdc-para-empresas"
               className={cn(
                 'transition-all hover:brightness-75',
-                pathname === '/credito-para-empresa' &&
+                pathname === '/cdc-para-empresas' &&
                   'underline underline-offset-2',
               )}
-              title="Clique para ver as opções de crédito para empresa"
+              title="Clique para ver as opções de CDC para empresas"
             >
-              Crédito para empresa
+              CDC para Empresas
             </Link>
 
             <Link
@@ -183,8 +183,8 @@ export function Header() {
               <div className="pointer-events-none flex select-none items-center justify-center gap-4">
                 <img
                   alt="Logo do Lounge Brahma"
-                  className="w-32 object-contain"
-                  src="/logo.svg"
+                  className="h-20 w-32 object-cover"
+                  src="/logo-white.png"
                 />
               </div>
 
@@ -204,14 +204,14 @@ export function Header() {
 
                 <SheetClose asChild>
                   <Link
-                    to="/credito-para-empresa"
+                    to="/cdc-para-empresas"
                     className={cn(
                       'flex items-center gap-3 rounded-lg bg-primary-lighter px-4 py-3 transition-all hover:brightness-75',
-                      pathname === '/credito-para-empresa' &&
+                      pathname === '/cdc-para-empresas' &&
                         'bg-gradient-to-r from-secondary-1 via-secondary-3 to-secondary-4 text-white',
                     )}
                   >
-                    Crédito para empresa
+                    CDC para Empresas
                   </Link>
                 </SheetClose>
 

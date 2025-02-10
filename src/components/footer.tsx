@@ -1,15 +1,7 @@
 import { format } from 'date-fns'
-import {
-  CopyIcon,
-  MailIcon,
-  MapPinIcon,
-  PhoneIcon,
-  SendHorizonalIcon,
-} from 'lucide-react'
-import CopyToClipboard from 'react-copy-to-clipboard'
+import { MailIcon, PhoneIcon, SendHorizonalIcon } from 'lucide-react'
 import { PiFacebookLogo, PiInstagramLogo, PiWhatsappLogo } from 'react-icons/pi'
 import { Link, useLocation } from 'react-router-dom'
-import { toast } from 'sonner'
 
 import { cn } from '../@config/lib/cn'
 import { Reveal } from './reveal'
@@ -253,7 +245,7 @@ export function Footer() {
         </div>
       </section>
 
-      <section className="relative border-t-2">
+      {/* <section className="relative border-t-2">
         <iframe
           width="100%"
           height="540"
@@ -325,7 +317,7 @@ export function Footer() {
             </Reveal>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <footer className="bg-primary">
         <div className="bg-primary-lighter">
@@ -335,7 +327,11 @@ export function Footer() {
               title="Clique para voltar ao início"
               className="shrink-0"
             >
-              <img className="h-12" alt="Logo da UCRED" src="/logo.svg" />
+              <img
+                className="h-14 w-28 object-cover"
+                alt="Logo da UCRED"
+                src="/logo-white.png"
+              />
             </Link>
 
             <p className="text-md font-medium text-zinc-200">
@@ -367,15 +363,15 @@ export function Footer() {
                 </Link>
 
                 <Link
-                  to="/credito-para-empresa"
-                  title="Crédito para empresa"
+                  to="/cdc-para-empresas"
+                  title="CDC para Empresas"
                   className={cn(
                     'flex items-center gap-2 transition-all hover:ml-2',
-                    pathname === '/credito-para-empresa' &&
+                    pathname === '/cdc-para-empresas' &&
                       'underline underline-offset-2',
                   )}
                 >
-                  Crédito para empresa
+                  CDC para Empresas
                 </Link>
 
                 <Link
@@ -524,30 +520,40 @@ export function Footer() {
         <div className="border-t border-t-primary-lighter">
           <div className="container py-4">
             <p className="text-xs text-zinc-100">
-              IWF Serviços de Apoio Administ. - Eireli, com nome fantasia UCRED,
-              inscrita no CNPJ sob nº 06.376.451/0001-04, com sede à Rua
-              Emiliano Perneta, 424 - Conj. 21/22 - Centro - Curitiba - PR{' '}
+              IWF Serviços de Apoio Administrativo - Eireli, com nome fantasia
+              UCRED, inscrita no CNPJ sob nº 06.376.451/0001-04, com sede na Rua
+              Emiliano Perneta, 424 - Conj. 21/22, Centro, Curitiba - PR.
               <br />
-              A Ucred não é uma financeira: somos um correspondente bancário
+              <br />
+              A UCRED não é uma financeira; somos um correspondente bancário da
               Giro Sociedade de Crédito Direto S/A, inscrita no CNPJ sob nº
-              40.112.555/0001-40, com sede à Rua Visconde do Rio Branco, 1488 -
-              Sala 1006 - Centro - Curitiba - PR <br />
-              A Ucred não cobra nenhum valor antecipado para aprovar ou
-              depositar seu crédito. Caso você seja contatado por alguém, se
-              passando pela Ucred, e cobrando qualquer valor antecipado, encerre
-              o contato imediatamente e entre em contato com a gente. Você pode
-              estar sendo vítima de uma tentativa de fraude. <br />O atraso no
-              pagamento das prestações do seu empréstimo pessoal pode ter como
-              consequência a inclusão do seu nome nos cadastros de inadimplentes
-              dos órgãos de proteção ao crédito, o protesto de títulos e, ainda,
-              o ajuizamento de ações judiciais de cobrança, dentre outras. Para
-              evitar maiores problemas e restrições ao seu crédito, mantenha
-              sempre o pagamento de suas parcelas em dia. <br />O período mínimo
-              é de 3 meses e o máximo 24 meses. Taxa de juros: <br />A taxa
-              varia entre 5,99% e 18,9% ao mês (149% a 376,74% ao ano). <br />
-              Exemplo de um empréstimo: R$ 1.500,00, para pagar em 24 meses e
-              taxa de juros de 13,90% ao mês (376,74% ao ano). Total de 24
-              parcelas de R$ 224,40. Valor total a pagar igual a R$ 5.385,60.
+              40.112.555/0001-40, com sede na Rua Visconde do Rio Branco, 1488 -
+              Sala 1006, Centro, Curitiba - PR.
+              <br />
+              <br />
+              A UCRED não cobra nenhum valor antecipado para aprovar ou
+              depositar seu crédito. Caso você seja contatado por alguém se
+              passando pela UCRED e cobrando qualquer valor antecipado, encerre
+              o contato imediatamente e fale conosco. Você pode estar sendo
+              vítima de uma tentativa de fraude.
+              <br />
+              <br />
+              O atraso no pagamento das parcelas do seu empréstimo pessoal pode
+              resultar na inclusão do seu nome nos cadastros de inadimplentes
+              dos órgãos de proteção ao crédito, protesto de títulos e, ainda,
+              no ajuizamento de ações judiciais de cobrança, entre outras
+              medidas. Para evitar problemas e restrições ao seu crédito,
+              mantenha sempre o pagamento das suas parcelas em dia.
+              <br />
+              <br />
+              Condições do crédito: nosso prazo mínimo é de 3 meses e máximo de
+              24 meses. Nossa taxa de juros varia de 5,99% a 18,9% ao mês (149%
+              a 376,74% ao ano).
+              <br />
+              <br />
+              Exemplo de simulação: empréstimo de R$ 1.500,00, parcelado em 24
+              meses, com taxa de 13,90% ao mês (376,74% ao ano). Total de 24
+              parcelas de R$ 224,40. Valor total a pagar: R$ 5.385,60.
             </p>
           </div>
         </div>

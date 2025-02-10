@@ -21,7 +21,7 @@ export function PoliticaDePrivacidadePage() {
       <Header />
 
       <div className="container py-14 text-lg text-zinc-600">
-        <h2 className="text-2xl font-bold text-zinc-600">
+        <h2 className="text-xl font-bold text-zinc-600 md:text-2xl">
           POLÍTICA DE PRIVACIDADE - UCRED
         </h2>
 

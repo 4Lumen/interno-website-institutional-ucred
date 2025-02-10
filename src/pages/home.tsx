@@ -5,8 +5,6 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
   ClockIcon,
-  CreditCardIcon,
-  PercentIcon,
   PhoneIcon,
   PlusIcon,
   RssIcon,
@@ -73,22 +71,21 @@ export function Home() {
                 <div className="w-full flex-[1.2]">
                   <Reveal classes="hidden md:block">
                     <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl xl:text-6xl xl:leading-[4rem]">
-                      Seu cliente paga <br /> parcelado, mas a sua empresa
-                      recebe à vista
+                      Parcelado para o cliente, dinheiro à vista para você
                     </h2>
                   </Reveal>
 
                   <Reveal classes="block md:hidden">
                     <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl xl:text-6xl xl:leading-[4rem]">
-                      Seu cliente paga parcelado, mas a sua empresa recebe à
-                      vista
+                      Parcelado para o cliente, <br /> dinheiro à vista para
+                      você
                     </h2>
                   </Reveal>
 
                   <Reveal>
                     <p className="mt-4 text-lg text-zinc-200 md:text-xl lg:text-2xl">
-                      Financiamento de procedimentos estéticos, produtos ou
-                      serviços é na UCRED!
+                      Crédito direto ao consumidor de procedimentos estéticos,
+                      produtos ou serviços é na UCRED!
                     </p>
                   </Reveal>
 
@@ -105,7 +102,7 @@ export function Home() {
                       className="text-md mt-6 rounded-xl bg-white px-8 py-6 text-primary transition-all hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white"
                     >
                       <PlusIcon className="mr-2 size-4" />
-                      Saiba mais
+                      Entenda como
                     </Button>
                   </Reveal>
                 </div>
@@ -125,22 +122,22 @@ export function Home() {
                 <div className="w-full flex-[1.2]">
                   <Reveal classes="hidden md:block">
                     <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-4xl xl:text-5xl xl:leading-[3.5rem]">
-                      Crédito rápido e prático <br /> para realizar os projetos
-                      que você sempre sonhou
+                      Crédito rápido e sem complicação, a um clique de
+                      distância!
                     </h2>
                   </Reveal>
 
                   <Reveal classes="block md:hidden">
                     <h2 className="block text-2xl font-bold tracking-tight text-white md:hidden md:text-4xl lg:text-5xl xl:text-6xl xl:leading-[4rem]">
-                      Crédito rápido e prático para realizar os projetos que
-                      você sempre sonhou
+                      Crédito rápido e sem <br /> complicação, a um clique de
+                      distância!
                     </h2>
                   </Reveal>
 
                   <Reveal>
                     <p className="mt-4 text-lg text-zinc-200 md:text-xl lg:text-2xl">
-                      Conte com a gente para realizar seus maiores sonhos junto
-                      com quem você ama.
+                      A solução financeira ágil que você precisa para tirar seus
+                      planos do papel
                     </p>
                   </Reveal>
 
@@ -157,7 +154,7 @@ export function Home() {
                       className="text-md mt-6 rounded-xl bg-white px-8 py-6 text-primary transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white"
                     >
                       <PlusIcon className="mr-2 size-4" />
-                      Saiba mais
+                      Fale conosco
                     </Button>
                   </Reveal>
                 </div>
@@ -193,7 +190,7 @@ export function Home() {
 
       <div className="h-5 w-full bg-gradient-to-r from-secondary via-secondary-2 to-secondary-4" />
 
-      <section className="container py-10">
+      {/* <section className="container py-10">
         <div className="grid grid-cols-1 gap-14 rounded-2xl bg-primary bg-benefits bg-cover bg-center bg-no-repeat p-10 md:grid-cols-2 xl:grid-cols-4 xl:gap-0">
           <Reveal>
             <div className="flex flex-col items-center space-y-4 text-white md:items-start">
@@ -231,9 +228,9 @@ export function Home() {
             </div>
           </Reveal>
         </div>
-      </section>
+      </section> */}
 
-      <section className="overflow-hidden rounded-tl-[3rem] border-y-2 border-zinc-200 bg-zinc-100 md:rounded-br-[4rem] md:rounded-tl-[4rem]">
+      <section className="mt-14 overflow-hidden rounded-tl-[3rem] border-y-2 border-zinc-200 bg-zinc-100 md:rounded-br-[4rem] md:rounded-tl-[4rem]">
         <div className="container flex flex-col gap-6 md:flex-row">
           <div className="flex w-full flex-[1.2] flex-col justify-center py-10">
             <Reveal>
@@ -243,19 +240,20 @@ export function Home() {
             </Reveal>
             <Reveal>
               <h2 className="mt-3 text-2xl font-extrabold text-zinc-600 lg:text-4xl xl:text-5xl">
-                Na UCRED você pode <br /> confiar de olhos fechados
+                A Ucred é sua <br /> parceira de confiança!
               </h2>
             </Reveal>
 
             <Reveal>
               <p className="mt-5 text-lg font-medium text-zinc-600">
-                A UCRED Serviços Financeiros é uma correspondente bancária da
-                GIROTECH que está atuando há 17 anos no mercado financeiro
-                profissional.
+                Garantimos segurança e praticidade para quem busca crédito sem
+                complicação.
                 <br />
-                <br />O nosso produto é o crédito pessoal, sem exigência de
-                garantias, com taxas que variam em função do perfil de crédito
-                de cada cliente.
+                <br />
+                Com mais de 20 anos de experiência no mercado financeiro, somos
+                uma correspondente bancária da Girotech, oferecendo soluções de
+                crédito seguras, transparentes e acessíveis, com taxas ajustadas
+                ao seu perfil.
               </p>
             </Reveal>
           </div>
@@ -395,7 +393,7 @@ export function Home() {
                     </div>
 
                     <p className="text-xl font-bold text-zinc-600/80">
-                      Empréstimo pessoal <br /> sem garantia real
+                      Empréstimo <br /> descomplicado e seguro
                     </p>
                   </div>
                 </Reveal>
@@ -438,22 +436,22 @@ export function Home() {
         </div>
       </section>
 
-      <section className="rounded-bl-[3rem] rounded-tl-[3rem] bg-primary 2xl:rounded-bl-[30rem] 2xl:rounded-tl-[30rem]">
+      <section className="rounded-bl-[3rem] rounded-tl-[3rem] bg-primary 2xl:rounded-bl-[10rem] 2xl:rounded-tl-[10rem]">
         <div className="container py-28">
           <div className="after:content=['*'] via-88% relative flex flex-col gap-1 from-secondary-1 via-secondary-2 via-50% to-secondary text-white after:absolute after:h-full after:w-1 after:bg-gradient-to-b">
             <Reveal>
               <h2 className="pl-4 text-2xl font-bold md:pl-8 md:text-4xl">
-                Perfeito para <br /> vários segmentos
+                Financiamento sob medida
               </h2>
             </Reveal>
             <Reveal>
               <p className="pl-4 text-sm font-medium md:pl-8 md:text-lg 2xl:text-lg">
-                Confira alguns segmentos que a UCRED trabalha
+                Impulsione seu crescimento com as melhores opções de crédito
               </p>
             </Reveal>
           </div>
 
-          <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-10 grid grid-cols-1 gap-10 lg:grid-cols-2">
             <Reveal>
               <div className="flex items-start gap-5">
                 <div className="flex size-16 shrink-0 items-center justify-center rounded-lg bg-primary-lighter text-white">
@@ -464,17 +462,19 @@ export function Home() {
                     Para empresas
                   </h2>
                   <p className="text-md mt-1 font-medium text-zinc-100">
-                    O serviço de crédito que a Ucred disponibiliza não se
-                    restringe apenas a companhias de saúde e estética.
+                    Mais vendas, menos preocupação! Com a Ucred, sua empresa tem
+                    Crédito Direto ao Consumidor facilitado para expandir seus
+                    negócios e oferecer melhores condições de pagamento aos
+                    clientes.
                   </p>
 
                   <Link
-                    to="/credito-para-empresa"
+                    to="/cdc-para-empresas"
                     title="Clique para saber mais"
-                    className="text-md mt-5 inline-flex items-center rounded-xl bg-primary-lighter px-8 py-3 text-white transition-all hover:brightness-90"
+                    className="text-md mt-5 inline-flex items-center rounded-xl bg-white px-8 py-3 font-semibold text-primary transition-all hover:brightness-90"
                   >
                     <PlusIcon className="mr-2 size-4" />
-                    Saiba mais
+                    Saiba mais e solicite agora
                   </Link>
                 </div>
               </div>
@@ -491,16 +491,18 @@ export function Home() {
                   </h2>
                   <p className="text-md mt-1 font-medium text-zinc-100">
                     Agora as empresas de estética, beleza, saúde e bem-estar
-                    podem contar com um sistema de crédito personalizado.
+                    podem contar com um sistema de crédito personalizado para
+                    expandir seus negócios, atrair mais clientes e oferecer
+                    condições de pagamento facilitadas.
                   </p>
 
                   <Link
                     to="/credito-para-estetica"
                     title="Clique para saber mais"
-                    className="text-md mt-5 inline-flex items-center rounded-xl bg-primary-lighter px-8 py-3 text-white transition-all hover:brightness-90"
+                    className="text-md mt-5 inline-flex items-center rounded-xl bg-white px-8 py-3 font-semibold text-primary transition-all hover:brightness-90"
                   >
                     <PlusIcon className="mr-2 size-4" />
-                    Saiba mais
+                    Saiba mais e solicite agora
                   </Link>
                 </div>
               </div>
@@ -516,17 +518,18 @@ export function Home() {
                     Empréstimo pessoal
                   </h2>
                   <p className="text-md mt-1 font-medium text-zinc-100">
-                    Além da pessoa jurídica, a pessoa física também tem direito
-                    a utilizar o sistema de crédito personalizado da Ucred.
+                    Realize seus planos sem complicação! Crédito acessível e sem
+                    burocracia para você tirar seus projetos do papel e
+                    conquistar o que deseja.
                   </p>
 
                   <Link
                     to="/emprestimo-pessoal"
                     title="Clique para saber mais"
-                    className="text-md mt-5 inline-flex items-center rounded-xl bg-primary-lighter px-8 py-3 text-white transition-all hover:brightness-90"
+                    className="text-md mt-5 inline-flex items-center rounded-xl bg-white px-8 py-3 font-semibold text-primary transition-all hover:brightness-90"
                   >
                     <PlusIcon className="mr-2 size-4" />
-                    Saiba mais
+                    Saiba mais e solicite agora
                   </Link>
                 </div>
               </div>
