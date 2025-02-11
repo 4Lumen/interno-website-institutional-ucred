@@ -46,6 +46,93 @@ export function Footer() {
             >
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-left">
+                  Como fazer o empréstimo pessoal?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className="text-lg font-medium text-primary">
+                    Acesse{' '}
+                    <Link
+                      to="www.ucred.net.br"
+                      target="_blank"
+                      className="underline underline-offset-2"
+                    >
+                      www.ucred.net.br
+                    </Link>{' '}
+                    e faça uma simulação preenchendo o valor e quantidade de
+                    parcelas desejadas. <br />
+                    Nossos processos de empréstimo são feitos somente pelo site
+                    e não é cobrado nenhum valor antecipado. Todas as propostas
+                    passam por uma análise e podem ou não ser aprovadas.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="text-left">
+                  Quais bancos são aceitos pela UCRED?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className="text-lg font-medium text-primary">
+                    Trabalhamos com contas dos bancos: Bradesco, Itaú,
+                    Santander, Sicred e Nubank.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="text-left">
+                  É necessário pagar para liberar o empréstimo?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className="text-lg font-medium text-primary">
+                    Nenhum valor é cobrado antecipadamente pelo seu empréstimo
+                    pessoal! A UCRED só começa a cobrar suas parcelas após a
+                    aprovação da proposta e depois do dinheiro cair na conta. As
+                    taxas e encargos serão incluídos no valor dos pagamentos
+                    mensais. <br />
+                    Caso alguém entre em contato se passando pela UCRED e
+                    cobrando taxas antes de qualquer aprovação de crédito em
+                    nossa plataforma, encerre o contato imediatamente, pois você
+                    pode estar sendo vítima de uma tentativa de golpe.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="text-left">
+                  Como faço para antecipar o pagamento do meu empréstimo?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className="text-lg font-medium text-primary">
+                    Para antecipar parcelas do empréstimo ou quitar seu
+                    contrato, basta enviar um e-mail para COBRANCA@UCRED.NET.BR,
+                    informando qual(is) a(s) parcela(s) você deseja efetuar o
+                    pagamento, ou entrar em contato com nossa central de
+                    atendimento. número de parcelas. <br />
+                    Você pode parcelar seu empréstimo em 6, 9, 10, 12, 15 ou 18
+                    meses.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-5">
+                <AccordionTrigger className="text-left">
+                  Posso alterar a data de vencimento da parcela do meu
+                  empréstimo pessoal?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className="text-lg font-medium text-primary">
+                    Não é possível alterar a data de vencimento da parcela do
+                    seu empréstimo. Essa data é calculada automaticamente com
+                    base na data em que você solicitou o empréstimo e em outros
+                    critérios durante a análise de crédito. A data de vencimento
+                    está definida no contrato.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-6">
+                <AccordionTrigger className="text-left">
                   Como tirar a segunda via do boleto?
                 </AccordionTrigger>
                 <AccordionContent>
@@ -60,7 +147,7 @@ export function Footer() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-2">
+              <AccordionItem value="item-7">
                 <AccordionTrigger className="text-left">
                   Como fazer antecipação do pagamento?
                 </AccordionTrigger>
@@ -97,7 +184,7 @@ export function Footer() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-3">
+              <AccordionItem value="item-8">
                 <AccordionTrigger className="text-left">
                   Como fazer a atualização de um boleto
                 </AccordionTrigger>
@@ -115,7 +202,7 @@ export function Footer() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-4">
+              <AccordionItem value="item-9">
                 <AccordionTrigger className="text-left">
                   Como proceder em caso de cancelamento do contrato
                 </AccordionTrigger>
@@ -154,7 +241,7 @@ export function Footer() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-5">
+              <AccordionItem value="item-10">
                 <AccordionTrigger className="text-left">
                   Como proceder em caso de negativa de crédito?
                 </AccordionTrigger>
@@ -362,15 +449,15 @@ export function Footer() {
 
               <div className="mt-4 flex flex-col items-center gap-2 text-zinc-200 md:items-start md:text-left">
                 <Link
-                  to="/credito-para-estetica"
+                  to="/cdc-para-estetica"
                   title="Crédito para estética"
                   className={cn(
                     'flex items-center gap-2 transition-all hover:ml-2',
-                    pathname === '/credito-para-estetica' &&
+                    pathname === '/cdc-para-estetica' &&
                       'underline underline-offset-2',
                   )}
                 >
-                  Crédito para estética
+                  CDC para estética
                 </Link>
 
                 <Link

@@ -3,7 +3,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 
 import { CreditoParaEmpresaPage } from '../pages/(cdc-para-empresas)/page'
-import { CreditoParaEsteticaPage } from '../pages/(credito-para-estetica)/page'
+import { CreditoParaEsteticaPage } from '../pages/(cdc-para-estetica)/page'
 import { EmprestimoPessoalPage } from '../pages/(emprestimo-pessoal)/page'
 import { PoliticaDeCookiesPage } from '../pages/(politicas)/politica-de-cookies/page'
 import { PoliticaDePrivacidadePage } from '../pages/(politicas)/politica-de-privacidade/page'
@@ -16,7 +16,7 @@ const router: any = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: '/credito-para-estetica',
+    path: '/cdc-para-estetica',
     element: <CreditoParaEsteticaPage />,
   },
   {

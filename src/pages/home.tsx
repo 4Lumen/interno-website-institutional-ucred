@@ -107,10 +107,10 @@ export function Home() {
                   </Reveal>
                 </div>
 
-                <div className="flex h-full w-full flex-[1.2] items-end">
+                <div className="flex h-full w-full flex-[1.2] items-center py-4">
                   <img
-                    src="/banner-hero.png"
-                    className="h-full w-full object-contain object-bottom"
+                    src="/hero.png"
+                    className="h-full w-full object-contain object-right"
                     alt="Imagem de um homem no computador"
                   />
                 </div>
@@ -154,11 +154,11 @@ export function Home() {
                   </Reveal>
                 </div>
 
-                <div className="flex h-full w-full flex-[1.2] items-end">
+                <div className="flex h-full w-full flex-[1.2] items-center py-4">
                   <img
-                    src="/banner-hero.png"
+                    src="/hero-2.png"
+                    className="h-full w-full object-contain object-right"
                     alt="Imagem de um homem no computador"
-                    className="h-full w-full object-contain object-bottom"
                   />
                 </div>
               </div>
@@ -251,8 +251,33 @@ export function Home() {
                 ao seu perfil.
               </p>
             </Reveal>
+
+            <Reveal>
+              <div className="mt-10 flex items-start gap-5 rounded-md border bg-white p-4 md:inline-flex">
+                <div>
+                  <h2 className="text-lg font-semibold text-zinc-600 md:text-xl">
+                    Simples, rápido e sem burocracia.
+                  </h2>
+
+                  <Reveal classes="mt-3">
+                    <Link
+                      to="https://api.whatsapp.com/send?phone=554131954559&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+                      target="_blank"
+                      className={cn(
+                        'text-md inline-flex items-center rounded-xl bg-white px-8 py-3 text-primary transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0',
+                        isScrolled && 'bg-primary text-white',
+                      )}
+                      title="Clique para entrar em contato conosco"
+                    >
+                      <PhoneIcon className="mr-2 size-4" />
+                      Solicite seu crédito
+                    </Link>
+                  </Reveal>
+                </div>
+              </div>
+            </Reveal>
           </div>
-          <div className="flex w-full flex-1 items-center justify-center bg-primary bg-about bg-cover bg-center bg-no-repeat pt-4 md:max-h-[29rem]">
+          <div className="flex w-full flex-1 items-center justify-center bg-primary bg-about bg-cover bg-center bg-no-repeat pt-4">
             <img
               alt="Imagem uma mulher no telefone"
               src="/imagens/mulher-telefone.png"
@@ -492,7 +517,7 @@ export function Home() {
                   </p>
 
                   <Link
-                    to="/credito-para-estetica"
+                    to="/cdc-para-estetica"
                     title="Clique para saber mais"
                     className="text-md mt-5 inline-flex items-center rounded-xl bg-white px-8 py-3 font-semibold text-primary transition-all hover:brightness-90"
                   >

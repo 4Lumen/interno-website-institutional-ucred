@@ -1,6 +1,5 @@
 import {
   BuildingIcon,
-  CheckCircleIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
   DollarSignIcon,
@@ -11,6 +10,7 @@ import {
 } from 'lucide-react'
 import { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
+import { FaChartLine } from 'react-icons/fa'
 import { MdOutlineWallet } from 'react-icons/md'
 import { PiChartLineUp, PiContactlessPayment } from 'react-icons/pi'
 import { Link } from 'react-router-dom'
@@ -42,29 +42,29 @@ export function CreditoParaEmpresaPage() {
           <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
             <div className="w-full flex-[1.2]">
               <Reveal classes="hidden md:block">
-                <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl xl:text-6xl xl:leading-[4rem]">
-                  Mais benefícios <br /> para a sua{' '}
+                <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
+                  Transforme pagamentos <br /> parcelados em{' '}
                   <span className="bg-gradient-to-r from-secondary-1 via-secondary-3 to-secondary-4 bg-clip-text text-transparent">
-                    empresa
+                    dinheiro à vista
                   </span>
                 </h2>
               </Reveal>
 
               <Reveal classes="block md:hidden">
                 <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl xl:text-6xl xl:leading-[4rem]">
-                  Mais benefícios <br /> para a sua{' '}
+                  Transforme pagamentos <br /> parcelados em{' '}
                   <span className="bg-gradient-to-r from-secondary-1 via-secondary-3 to-secondary-4 bg-clip-text text-transparent">
-                    empresa
+                    dinheiro à vista
                   </span>
                 </h2>
               </Reveal>
 
               <Reveal>
                 <p className="mt-4 text-lg text-zinc-200 md:text-xl lg:text-xl">
-                  Nós disponibilizamos um sistema totalmente on-line para o
-                  cliente final ter controle dos seus gastos, como também
-                  repassamos o valor total para a empresa que fechou serviço
-                  conosco.
+                  Facilitamos o acesso ao crédito para que sua empresa venda
+                  mais e seus clientes tenham mais poder de compra. Seu cliente
+                  acompanha os gastos em tempo real, enquanto você recebe o
+                  valor total da venda de forma rápida e segura.
                 </p>
               </Reveal>
 
@@ -103,47 +103,38 @@ export function CreditoParaEmpresaPage() {
             <div>
               <Reveal classes="hidden md:block">
                 <h2 className="mt-3 text-2xl font-extrabold text-zinc-600 lg:text-4xl xl:text-5xl">
-                  Chegou a hora de trazer <br /> mais benefícios para sua
-                  empresa
+                  Mais vendas, menos burocracia!
                 </h2>
               </Reveal>
 
               <Reveal classes="block md:hidden">
                 <h2 className="mt-3 text-2xl font-extrabold text-zinc-600 lg:text-4xl xl:text-5xl">
-                  Chegou a hora de trazer mais benefícios para sua empresa
+                  Mais vendas, menos burocracia!
                 </h2>
               </Reveal>
               <Reveal>
                 <p className="mt-4 text-lg font-medium text-zinc-600">
-                  Com a Ucred Serviços Financeiros você tem mais facilidade e
-                  praticidade para fechar novos serviços.
+                  Com a Ucred, sua empresa oferece mais opções de pagamento para
+                  os clientes, garantindo mais vendas e fluxo de caixa
+                  previsível. Seu cliente parcela, mas você recebe o valor total
+                  no próximo dia útil, sem preocupações com inadimplência.
                   <br />
                   <br />
-                  Nós disponibilizamos um sistema totalmente on-line para o
-                  cliente final ter controle dos seus gastos, como também
-                  repassamos o valor total para a empresa que fechou serviço
-                  conosco.
+                  Nosso sistema é 100% digital e intuitivo, permitindo que você
+                  tenha controle total das operações e receba suporte
+                  especializado sempre que precisar.” Sugestão: Transformar os
+                  segmentos em ícones para leitura rápida.
                   <br />
                   <br />
-                  Ainda, nós oferecemos diversos canais de comunicação, para que
-                  a empresa contratante possa resolver qualquer problema ou
-                  dúvida que venha surgir no fechamento de uma venda de produto
-                  ou serviço.
-                  <br />
-                  <br />
-                  Vale ressaltar que estamos disponíveis para tirar dúvidas e
-                  fechar negócios de segunda a sexta-feira de 8h às 20h. E aos
-                  sábados funcionamos de 8h às 18h.
-                  <br />
-                  <br />
-                  São muitos anos de dedicação e experiência profissional dos
-                  idealizadores da Ucred para que hoje exista um sistema prático
-                  e ágil para você.
-                  <br />
-                  <br />
-                  Saiba que, além da área de estética, também oferecemos nossos
-                  serviços para outros setores, como: saúde, moveleiro,
-                  eletrônicos, entre outros.
+                  “Atendemos diversos segmentos: <br />
+                  🚗 Autocenters – Facilite a manutenção veicular dos seus
+                  clientes. <br />
+                  🐶 Clínicas veterinárias – Opções acessíveis para os tutores
+                  cuidarem dos pets. <br />
+                  🛋️ Varejo de móveis e eletrodomésticos – Aumente as vendas com
+                  mais flexibilidade. <br />
+                  💆‍♀️ Clínicas de estética – Mais acessibilidade para tratamentos
+                  e pacotes.
                 </p>
               </Reveal>
             </div>
@@ -158,7 +149,7 @@ export function CreditoParaEmpresaPage() {
                 title="Clique para cadastrar minha empresa"
               >
                 <PlusIcon className="mr-2 size-4" />
-                Cadastrar minha empresa
+                Quero mais vendas!
               </Link>
             </Reveal>
           </div>
@@ -174,8 +165,8 @@ export function CreditoParaEmpresaPage() {
                     Presença nacional
                   </h2>
                   <p className="text-md mt-1 font-medium text-zinc-600">
-                    A UCRED está presente, oferecendo soluções de crédito
-                    acessíveis e seguras para diversos segmentos do mercado.
+                    A Ucred está em todo o Brasil, oferecendo crédito acessível
+                    e seguro para impulsionar negócios e transformar resultados.
                   </p>
                 </div>
               </div>
@@ -191,8 +182,9 @@ export function CreditoParaEmpresaPage() {
                     Experiência
                   </h2>
                   <p className="text-md mt-1 font-medium text-zinc-600">
-                    Com anos de atuação no mercado, a UCRED se consolidou como
-                    referência em crédito, atendendo clínicas de estética.
+                    Com mais de 20 anos de mercado, a Ucred é referência em
+                    soluções financeiras para clínicas de estética que querem
+                    crescer com segurança.
                   </p>
                 </div>
               </div>
@@ -208,11 +200,28 @@ export function CreditoParaEmpresaPage() {
                     Suporte
                   </h2>
                   <p className="text-md mt-1 font-medium text-zinc-600">
-                    Nosso time de especialistas está sempre disponível para
-                    oferecer suporte completo em todas as etapas do processo.
+                    Nosso time de especialistas acompanha você em cada etapa,
+                    garantindo um processo rápido, sem burocracia e totalmente
+                    seguro.
                   </p>
                 </div>
               </div>
+            </Reveal>
+          </div>
+
+          <div className="mt-12 flex justify-center">
+            <Reveal classes="w-full md:w-auto">
+              <Link
+                to="/cadastro-loja.pdf"
+                target="_blank"
+                className={cn(
+                  'text-md flex w-full shrink-0 items-center justify-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:w-auto',
+                )}
+                title="Clique para entrar em contato conosco"
+              >
+                <FaChartLine className="mr-2 size-4" />
+                Aumentar minhas vendas agora
+              </Link>
             </Reveal>
           </div>
         </div>
@@ -223,7 +232,7 @@ export function CreditoParaEmpresaPage() {
           <div className="flex w-full flex-col justify-center lg:items-center">
             <Reveal>
               <span className="text-md rounded-full bg-primary px-3 py-1 font-semibold text-white lg:text-xl">
-                Soluções financeiras
+                CDC para sua empresa
               </span>
             </Reveal>
 
@@ -241,8 +250,9 @@ export function CreditoParaEmpresaPage() {
 
             <Reveal>
               <p className="mt-3 max-w-xl text-xl font-medium text-zinc-600 lg:text-center">
-                Na Ucred Serviços Financeiros oferecemos um atendimento ágil,
-                com aprovação on-line e de forma facilitadora.
+                A Ucred facilita o acesso ao crédito do seu cliente, com
+                aprovação online e sem burocracia. Mais praticidade para você e
+                mais oportunidades para seus pacientes!
               </p>
             </Reveal>
           </div>
@@ -255,10 +265,9 @@ export function CreditoParaEmpresaPage() {
                     1
                   </div>
                   <p>
-                    Após entrar em contato conosco através do nosso site, basta
-                    clicar na aba direcionada para o lojista, preencher o
-                    formulário que disponibilizamos na plataforma, anexar os
-                    documentos necessários e pronto.
+                    Faça seu cadastro <br />
+                    Acesse nosso site, clique na aba para lojistas e preencha o
+                    formulário com seus dados.
                   </p>
                 </div>
               </div>
@@ -269,10 +278,26 @@ export function CreditoParaEmpresaPage() {
                     2
                   </div>
                   <p>
-                    A equipe responsável em breve estará entrando em contato com
-                    a empresa para começarmos a fechar nossa parceria.
+                    Envie sua documentação <br />
+                    Anexe os documentos necessários diretamente na plataforma de
+                    forma simples e segura.
                   </p>
                 </div>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="lex mt-5 justify-center border bg-white p-5 lg:p-10">
+              <div className="flex flex-1 items-start gap-4">
+                <div className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-lg font-bold text-white">
+                  3
+                </div>
+                <p>
+                  Aguarde nossa análise <br />
+                  Nossa equipe avaliará suas informações e entrará em contato
+                  rapidamente para dar início à parceria.
+                </p>
               </div>
             </div>
           </Reveal>
@@ -281,11 +306,12 @@ export function CreditoParaEmpresaPage() {
             <div className="mt-5 flex flex-col justify-center gap-6 rounded-b-xl border bg-white p-5 lg:flex-row lg:items-end lg:gap-20 lg:p-10">
               <div className="flex flex-1 items-start gap-4">
                 <div className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-lg font-bold text-white">
-                  3
+                  4
                 </div>
-                <p className="font-semibold text-zinc-600 lg:text-2xl">
-                  Seremos o parceiro ideal para fazer a sua clínica de estética
-                  obter mais clientes e conquistar melhores resultados.
+                <p className="font-semibold text-zinc-600 lg:text-xl">
+                  Aumente suas vendas <br />
+                  Com a Ucred, sua empresa oferece parcelamento aos clientes e
+                  recebe o valor à vista, sem preocupação com inadimplência.
                 </p>
               </div>
 
@@ -296,10 +322,10 @@ export function CreditoParaEmpresaPage() {
                   className={cn(
                     'text-md mt-5 flex shrink-0 items-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0',
                   )}
-                  title="Clique para cadastrar minha empresa"
+                  title="Clique para oferecer crédito"
                 >
                   <PlusIcon className="mr-2 size-4" />
-                  Cadastrar minha empresa
+                  Quero oferecer crédito
                 </Link>
               </Reveal>
             </div>
@@ -465,18 +491,20 @@ export function CreditoParaEmpresaPage() {
         </div>
       </section>
 
-      <section className="rounded-bl-[3rem] rounded-tl-[3rem] bg-primary 2xl:rounded-bl-[30rem] 2xl:rounded-tl-[30rem]">
-        <div className="container flex flex-col items-start gap-10 py-14 lg:flex-row lg:gap-0">
+      <section className="rounded-bl-[3rem] rounded-tr-[3rem] bg-primary 2xl:rounded-br-[30rem] 2xl:rounded-tr-[30rem]">
+        <div className="container flex flex-col items-start gap-10 py-14 lg:flex-row lg:gap-10">
           <div className="flex-1 lg:sticky lg:top-[50rem] lg:pb-[6rem]">
             <div className="after:content=['*'] via-88% relative flex flex-col gap-1 from-secondary-1 via-secondary-2 via-50% to-secondary text-zinc-100 after:absolute after:h-full after:w-1 after:bg-gradient-to-b">
               <Reveal>
                 <h2 className="pl-4 text-2xl font-bold md:pl-8 md:text-3xl">
-                  Observações
+                  Transparência e Segurança
                 </h2>
               </Reveal>
               <Reveal>
                 <p className="max-w-3xl pl-4 text-sm font-medium md:pl-8 md:text-lg 2xl:text-lg">
-                  Veja como a UCRED trabalha
+                  Na Ucred, prezamos pela ética e pela segurança em todas as
+                  etapas do processo. Confira como trabalhamos e proteja-se de
+                  possíveis golpes.
                 </p>
               </Reveal>
             </div>
@@ -486,44 +514,49 @@ export function CreditoParaEmpresaPage() {
                 to="/cadastro-loja.pdf"
                 target="_blank"
                 className="text-md mt-6 inline-flex items-center rounded-xl bg-white px-8 py-3 text-primary transition-all hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white"
-                title="Clique para cadastrar minha empresa"
+                title="Clique para ser um parceiro UCRED"
               >
                 <PlusIcon className="mr-2 size-4" />
-                Cadastrar minha empresa
+                Quero ser um parceiro
               </Link>
             </Reveal>
           </div>
           <div className="flex-1 space-y-5">
             <Reveal>
               <div className="flex items-start gap-3">
-                <CheckCircleIcon className="relative top-1 size-5 shrink-0 text-amber-400" />
                 <p className="text-lg font-semibold text-zinc-200">
-                  A Ucred não cobra nenhum tipo de taxa antecipada para efetuar
-                  o fechamento do contrato. Caso isso ocorra, não finalize o
-                  trâmite e denuncie em um de nossos canais oficiais.
+                  ✅ Sem taxas antecipadas
+                  <br />
+                  <br />
+                  Jamais solicitamos pagamentos prévios para fechar contrato.
+                  Caso ocorrs, não conclua a negociação e denuncie em nossos
+                  canais oficiais.
                 </p>
               </div>
             </Reveal>
 
             <Reveal>
               <div className="flex items-start gap-3">
-                <CheckCircleIcon className="relative top-1 size-5 shrink-0 text-amber-400" />
                 <p className="text-lg font-semibold text-zinc-200">
-                  Recebeu alguma cobrança e ficou com dúvida se ele é válido ou
-                  não? Entre em contato com a nossa equipe antes de efetuar o
-                  pagamento ou acesse o canal do cliente em nosso site oficial e
-                  verifique se você tem alguma cobrança em aberto.
+                  🔎 Dúvidas sobre cobranças?
+                  <br />
+                  <br />
+                  Se recebeu uma cobrança e não tem certeza da validade,
+                  consulte nossa equipe antes de efetuar qualquer pagamento.
+                  Acesse nosso Canal de Atendimento e verifique sua situação.
                 </p>
               </div>
             </Reveal>
 
             <Reveal>
               <div className="flex items-start gap-3">
-                <CheckCircleIcon className="relative top-1 size-5 shrink-0 text-amber-400" />
                 <p className="text-lg font-semibold text-zinc-200">
-                  Não entramos em contato via e-mail ou telefone solicitando
-                  dados e senhas. Caso isso ocorra, não informe e nos notifique
-                  imediatamente.
+                  🔒 Seus dados são sigilosos
+                  <br />
+                  <br />
+                  Nunca entramos em contato solicitando senhas ou informações
+                  sensíveis por e-mail ou telefone. Se isso acontecer, não
+                  forneça e nos comunique imediatamente.
                 </p>
               </div>
             </Reveal>

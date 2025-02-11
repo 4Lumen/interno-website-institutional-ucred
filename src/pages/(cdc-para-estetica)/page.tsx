@@ -1,18 +1,16 @@
 import {
   BuildingIcon,
-  CheckCircleIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
-  EyeIcon,
   PhoneCallIcon,
   PhoneIcon,
   PlusIcon,
   ShieldIcon,
-  UserPlusIcon,
 } from 'lucide-react'
 import { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
-import { PiContactlessPayment, PiPlantLight } from 'react-icons/pi'
+import { FaChartLine } from 'react-icons/fa'
+import { PiContactlessPayment } from 'react-icons/pi'
 import { Link } from 'react-router-dom'
 import { Autoplay, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -125,6 +123,11 @@ export function CreditoParaEsteticaPage() {
                   e um fluxo de caixa sempre saudável.
                 </p>
               </Reveal>
+
+              <h2 className="mt-4 text-xl font-bold text-zinc-600">
+                Fale com a Ucred e transforme a forma como sua clínica de
+                estética vende!
+              </h2>
             </div>
 
             <Reveal>
@@ -132,7 +135,7 @@ export function CreditoParaEsteticaPage() {
                 to="/cadastro-loja.pdf"
                 target="_blank"
                 className={cn(
-                  'text-md flex shrink-0 items-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0 md:mt-5',
+                  'text-md flex shrink-0 items-center justify-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0 md:mt-5',
                 )}
                 title="Clique para cadastrar minha empresa"
               >
@@ -153,8 +156,8 @@ export function CreditoParaEsteticaPage() {
                     Presença nacional
                   </h2>
                   <p className="text-md mt-1 font-medium text-zinc-600">
-                    A UCRED está presente, oferecendo soluções de crédito
-                    acessíveis e seguras para diversos segmentos do mercado.
+                    A Ucred está em todo o Brasil, oferecendo crédito acessível
+                    e seguro para impulsionar negócios e transformar resultados.
                   </p>
                 </div>
               </div>
@@ -170,8 +173,9 @@ export function CreditoParaEsteticaPage() {
                     Experiência
                   </h2>
                   <p className="text-md mt-1 font-medium text-zinc-600">
-                    Com anos de atuação no mercado, a UCRED se consolidou como
-                    referência em crédito, atendendo clínicas de estética.
+                    Com mais de 20 anos de mercado, a Ucred é referência em
+                    soluções financeiras para clínicas de estética que querem
+                    crescer com segurança.
                   </p>
                 </div>
               </div>
@@ -187,11 +191,28 @@ export function CreditoParaEsteticaPage() {
                     Suporte
                   </h2>
                   <p className="text-md mt-1 font-medium text-zinc-600">
-                    Nosso time de especialistas está sempre disponível para
-                    oferecer suporte completo em todas as etapas do processo.
+                    Nosso time de especialistas acompanha você em cada etapa,
+                    garantindo um processo rápido, sem burocracia e totalmente
+                    seguro.
                   </p>
                 </div>
               </div>
+            </Reveal>
+          </div>
+
+          <div className="mt-12 flex justify-center">
+            <Reveal classes="w-full md:w-auto">
+              <Link
+                to="/cadastro-loja.pdf"
+                target="_blank"
+                className={cn(
+                  'text-md flex w-full shrink-0 items-center justify-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:w-auto',
+                )}
+                title="Clique para entrar em contato conosco"
+              >
+                <FaChartLine className="mr-2 size-4" />
+                Aumentar minhas vendas agora
+              </Link>
             </Reveal>
           </div>
         </div>
@@ -202,7 +223,7 @@ export function CreditoParaEsteticaPage() {
           <div className="flex w-full flex-col justify-center lg:items-center">
             <Reveal>
               <span className="text-md rounded-full bg-primary px-3 py-1 font-semibold text-white lg:text-xl">
-                Soluções financeiras
+                CDC para sua clínica
               </span>
             </Reveal>
 
@@ -220,8 +241,9 @@ export function CreditoParaEsteticaPage() {
 
             <Reveal>
               <p className="mt-3 max-w-xl text-xl font-medium text-zinc-600 lg:text-center">
-                Na Ucred Serviços Financeiros oferecemos um atendimento ágil,
-                com aprovação on-line e de forma facilitadora.
+                A Ucred facilita o acesso ao crédito do seu cliente, com
+                aprovação online e sem burocracia. Mais praticidade para você e
+                mais oportunidades para seus pacientes!
               </p>
             </Reveal>
           </div>
@@ -234,10 +256,9 @@ export function CreditoParaEsteticaPage() {
                     1
                   </div>
                   <p>
-                    Após entrar em contato conosco através do nosso site, basta
-                    clicar na aba direcionada para o lojista, preencher o
-                    formulário que disponibilizamos na plataforma, anexar os
-                    documentos necessários e pronto.
+                    Faça seu cadastro <br />
+                    Acesse nosso site, clique na aba para lojistas e preencha o
+                    formulário com seus dados.
                   </p>
                 </div>
               </div>
@@ -248,10 +269,26 @@ export function CreditoParaEsteticaPage() {
                     2
                   </div>
                   <p>
-                    A equipe responsável em breve estará entrando em contato com
-                    a empresa para começarmos a fechar nossa parceria.
+                    Envie sua documentação <br />
+                    Anexe os documentos necessários diretamente na plataforma de
+                    forma simples e segura.
                   </p>
                 </div>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="lex mt-5 justify-center border bg-white p-5 lg:p-10">
+              <div className="flex flex-1 items-start gap-4">
+                <div className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-lg font-bold text-white">
+                  3
+                </div>
+                <p>
+                  Aguarde nossa análise <br />
+                  Nossa equipe avaliará suas informações e entrará em contato
+                  rapidamente para dar início à parceria.
+                </p>
               </div>
             </div>
           </Reveal>
@@ -260,11 +297,12 @@ export function CreditoParaEsteticaPage() {
             <div className="mt-5 flex flex-col justify-center gap-6 rounded-b-xl border bg-white p-5 lg:flex-row lg:items-end lg:gap-20 lg:p-10">
               <div className="flex flex-1 items-start gap-4">
                 <div className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-lg font-bold text-white">
-                  3
+                  4
                 </div>
-                <p className="font-semibold text-zinc-600 lg:text-2xl">
-                  Seremos o parceiro ideal para fazer a sua clínica de estética
-                  obter mais clientes e conquistar melhores resultados.
+                <p className="font-semibold text-zinc-600 lg:text-xl">
+                  Aumente suas vendas <br />
+                  Com a Ucred, sua clínica oferece parcelamento aos clientes e
+                  recebe o valor à vista, sem preocupação com inadimplência.
                 </p>
               </div>
 
@@ -275,10 +313,10 @@ export function CreditoParaEsteticaPage() {
                   className={cn(
                     'text-md mt-5 flex shrink-0 items-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0',
                   )}
-                  title="Clique para cadastrar minha empresa"
+                  title="Clique para oferecer crédito"
                 >
                   <PlusIcon className="mr-2 size-4" />
-                  Cadastrar minha empresa
+                  Quero oferecer crédito
                 </Link>
               </Reveal>
             </div>
@@ -291,14 +329,14 @@ export function CreditoParaEsteticaPage() {
           <div className="after:content=['*'] via-88% relative flex flex-col gap-1 from-secondary-1 via-secondary-2 via-50% to-secondary text-zinc-600 after:absolute after:h-full after:w-1 after:bg-gradient-to-b">
             <Reveal>
               <h2 className="pl-4 text-2xl font-bold md:pl-8 md:text-3xl">
-                O serviço que sua <br /> clínica estava precisando
+                Sua clínica está perdendo vendas?
               </h2>
             </Reveal>
             <Reveal>
               <p className="max-w-3xl pl-4 text-sm font-medium md:pl-8 md:text-lg 2xl:text-lg">
-                Quantas vezes você deixou de fechar um serviço com uma pessoa
-                devido a falta de opções na forma de pagamento que você podia
-                ofertar para o cliente?
+                Muitos pacientes desistem de tratamentos por falta de opções de
+                pagamento. Com a Ucred, você oferece mais acessibilidade e
+                aumenta suas conversões.
               </p>
             </Reveal>
           </div>
@@ -341,11 +379,16 @@ export function CreditoParaEsteticaPage() {
                 <Reveal>
                   <div className="flex flex-col items-start gap-2 px-5 py-10">
                     <div className="flex size-12 items-center justify-center rounded-lg bg-primary-lighter text-white">
-                      <UserPlusIcon className="size-6" />
+                      <img
+                        src="/icons/dolar.png"
+                        alt="Ícone de dolar"
+                        className="size-8 mix-blend-lighten invert"
+                      />
                     </div>
 
                     <p className="text-xl font-bold text-zinc-600/80">
-                      O aumento da busca de pacientes pela sua clínica
+                      Mais pacientes,
+                      <br /> mais faturamento
                     </p>
                   </div>
                 </Reveal>
@@ -359,7 +402,7 @@ export function CreditoParaEsteticaPage() {
                     </div>
 
                     <p className="text-xl font-bold text-zinc-600/80">
-                      Mais facilidade de pagamento para o paciente
+                      Facilidade <br /> no pagamento
                     </p>
                   </div>
                 </Reveal>
@@ -369,11 +412,15 @@ export function CreditoParaEsteticaPage() {
                 <Reveal>
                   <div className="flex flex-col items-start gap-2 px-5 py-10">
                     <div className="flex size-12 items-center justify-center rounded-lg bg-primary-lighter text-white">
-                      <EyeIcon className="size-6" />
+                      <img
+                        src="/icons/alvo.png"
+                        alt="Ícone de alvo"
+                        className="relative -top-[0.15rem] size-7 object-contain mix-blend-lighten invert"
+                      />
                     </div>
 
                     <p className="text-xl font-bold text-zinc-600/80">
-                      Mais facilidade para a pessoa realizar um sonho
+                      Transforme <br /> desejos em realidade
                     </p>
                   </div>
                 </Reveal>
@@ -383,11 +430,15 @@ export function CreditoParaEsteticaPage() {
                 <Reveal>
                   <div className="flex flex-col items-start gap-2 px-5 py-10">
                     <div className="flex size-12 items-center justify-center rounded-lg bg-primary-lighter text-white">
-                      <PiPlantLight className="size-6" />
+                      <img
+                        src="/icons/time.png"
+                        alt="Ícone de tempo"
+                        className="size-6 mix-blend-lighten invert"
+                      />
                     </div>
 
                     <p className="text-xl font-bold text-zinc-600/80">
-                      Procedimentos acessíveis sem cobertura do plano.
+                      Acesso a tratamentos <br /> sem burocracia
                     </p>
                   </div>
                 </Reveal>
@@ -401,7 +452,7 @@ export function CreditoParaEsteticaPage() {
                     </div>
 
                     <p className="text-xl font-bold text-zinc-600/80">
-                      Mais segurança contra atrasos e inadimplência.
+                      Segurança <br /> no pagamento
                     </p>
                   </div>
                 </Reveal>
@@ -444,17 +495,19 @@ export function CreditoParaEsteticaPage() {
       </section>
 
       <section className="rounded-bl-[3rem] rounded-tr-[3rem] bg-primary 2xl:rounded-br-[30rem] 2xl:rounded-tr-[30rem]">
-        <div className="container flex flex-col items-start gap-10 py-14 lg:flex-row lg:gap-0">
+        <div className="container flex flex-col items-start gap-10 py-14 lg:flex-row lg:gap-10">
           <div className="flex-1 lg:sticky lg:top-[50rem] lg:pb-[6rem]">
             <div className="after:content=['*'] via-88% relative flex flex-col gap-1 from-secondary-1 via-secondary-2 via-50% to-secondary text-zinc-100 after:absolute after:h-full after:w-1 after:bg-gradient-to-b">
               <Reveal>
                 <h2 className="pl-4 text-2xl font-bold md:pl-8 md:text-3xl">
-                  Observações
+                  Transparência e Segurança
                 </h2>
               </Reveal>
               <Reveal>
                 <p className="max-w-3xl pl-4 text-sm font-medium md:pl-8 md:text-lg 2xl:text-lg">
-                  Veja como a UCRED trabalha
+                  Na Ucred, prezamos pela ética e pela segurança em todas as
+                  etapas do processo. Confira como trabalhamos e proteja-se de
+                  possíveis golpes.
                 </p>
               </Reveal>
             </div>
@@ -464,44 +517,49 @@ export function CreditoParaEsteticaPage() {
                 to="/cadastro-loja.pdf"
                 target="_blank"
                 className="text-md mt-6 inline-flex items-center rounded-xl bg-white px-8 py-3 text-primary transition-all hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white"
-                title="Clique para cadastrar minha empresa"
+                title="Clique para ser um parceiro UCRED"
               >
                 <PlusIcon className="mr-2 size-4" />
-                Cadastrar minha empresa
+                Quero ser um parceiro
               </Link>
             </Reveal>
           </div>
           <div className="flex-1 space-y-5">
             <Reveal>
               <div className="flex items-start gap-3">
-                <CheckCircleIcon className="relative top-1 size-5 shrink-0 text-amber-400" />
                 <p className="text-lg font-semibold text-zinc-200">
-                  A Ucred não cobra nenhum tipo de taxa antecipada para efetuar
-                  o fechamento do contrato. Caso isso ocorra, não finalize o
-                  trâmite e denuncie em um de nossos canais oficiais.
+                  ✅ Sem taxas antecipadas
+                  <br />
+                  <br />
+                  Jamais solicitamos pagamentos prévios para fechar contrato.
+                  Caso ocorrs, não conclua a negociação e denuncie em nossos
+                  canais oficiais.
                 </p>
               </div>
             </Reveal>
 
             <Reveal>
               <div className="flex items-start gap-3">
-                <CheckCircleIcon className="relative top-1 size-5 shrink-0 text-amber-400" />
                 <p className="text-lg font-semibold text-zinc-200">
-                  Recebeu alguma cobrança e ficou com dúvida se ele é válido ou
-                  não? Entre em contato com a nossa equipe antes de efetuar o
-                  pagamento ou acesse o canal do cliente em nosso site oficial e
-                  verifique se você tem alguma cobrança em aberto.
+                  🔎 Dúvidas sobre cobranças?
+                  <br />
+                  <br />
+                  Se recebeu uma cobrança e não tem certeza da validade,
+                  consulte nossa equipe antes de efetuar qualquer pagamento.
+                  Acesse nosso Canal de Atendimento e verifique sua situação.
                 </p>
               </div>
             </Reveal>
 
             <Reveal>
               <div className="flex items-start gap-3">
-                <CheckCircleIcon className="relative top-1 size-5 shrink-0 text-amber-400" />
                 <p className="text-lg font-semibold text-zinc-200">
-                  Não entramos em contato via e-mail ou telefone solicitando
-                  dados e senhas. Caso isso ocorra, não informe e nos notifique
-                  imediatamente.
+                  🔒 Seus dados são sigilosos
+                  <br />
+                  <br />
+                  Nunca entramos em contato solicitando senhas ou informações
+                  sensíveis por e-mail ou telefone. Se isso acontecer, não
+                  forneça e nos comunique imediatamente.
                 </p>
               </div>
             </Reveal>

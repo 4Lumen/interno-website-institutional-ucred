@@ -100,15 +100,15 @@ export function Header() {
             )}
           >
             <Link
-              to="/credito-para-estetica"
+              to="/cdc-para-estetica"
               className={cn(
                 'transition-all hover:brightness-75',
-                pathname === '/credito-para-estetica' &&
+                pathname === '/cdc-para-estetica' &&
                   'underline underline-offset-2',
               )}
-              title="Clique para ver as opções de crédito para estética"
+              title="Clique para ver as opções de CDC para estética"
             >
-              Crédito para estética
+              CDC para estética
             </Link>
 
             <Link
@@ -190,14 +190,14 @@ export function Header() {
                 <nav className="mt-4 flex flex-col gap-3 text-zinc-200">
                   <SheetClose asChild>
                     <Link
-                      to="/credito-para-estetica"
+                      to="/cdc-para-estetica"
                       className={cn(
                         'flex items-center gap-3 rounded-lg bg-primary-lighter px-4 py-3 transition-all hover:brightness-75',
-                        pathname === '/credito-para-estetica' &&
+                        pathname === '/cdc-para-estetica' &&
                           'bg-gradient-to-r from-secondary-1 via-secondary-3 to-secondary-4 text-white',
                       )}
                     >
-                      Crédito para estética
+                      CDC para estética
                     </Link>
                   </SheetClose>
 
