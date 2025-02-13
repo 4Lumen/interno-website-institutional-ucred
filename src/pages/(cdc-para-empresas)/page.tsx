@@ -165,8 +165,9 @@ export function CreditoParaEmpresaPage() {
                     Presença nacional
                   </h2>
                   <p className="text-md mt-1 font-medium text-zinc-600">
-                    A Ucred está em todo o Brasil, oferecendo crédito acessível
-                    e seguro para impulsionar negócios e transformar resultados.
+                    A Ucred está ao lado de empresas em todo o país, oferecendo
+                    crédito inteligente para impulsionar vendas e garantir mais
+                    faturamento.
                   </p>
                 </div>
               </div>
@@ -182,9 +183,8 @@ export function CreditoParaEmpresaPage() {
                     Experiência
                   </h2>
                   <p className="text-md mt-1 font-medium text-zinc-600">
-                    Com mais de 20 anos de mercado, a Ucred é referência em
-                    soluções financeiras para clínicas de estética que querem
-                    crescer com segurança.
+                    Somos especialistas em soluções financeiras, ajudando
+                    negócios a crescerem sem preocupações.
                   </p>
                 </div>
               </div>
@@ -200,9 +200,8 @@ export function CreditoParaEmpresaPage() {
                     Suporte
                   </h2>
                   <p className="text-md mt-1 font-medium text-zinc-600">
-                    Nosso time de especialistas acompanha você em cada etapa,
-                    garantindo um processo rápido, sem burocracia e totalmente
-                    seguro.
+                    Desde a contratação até o recebimento, nossa equipe garante
+                    um processo ágil, seguro e sem burocracia.
                   </p>
                 </div>
               </div>
@@ -220,7 +219,7 @@ export function CreditoParaEmpresaPage() {
                 title="Clique para entrar em contato conosco"
               >
                 <FaChartLine className="mr-2 size-4" />
-                Aumentar minhas vendas agora
+                Quero aumentar meu faturamento!
               </Link>
             </Reveal>
           </div>
@@ -338,15 +337,15 @@ export function CreditoParaEmpresaPage() {
           <div className="after:content=['*'] via-88% relative flex flex-col gap-1 from-secondary-1 via-secondary-2 via-50% to-secondary text-zinc-600 after:absolute after:h-full after:w-1 after:bg-gradient-to-b">
             <Reveal>
               <h2 className="pl-4 text-2xl font-bold md:pl-8 md:text-3xl">
-                O serviço que sua <br /> empresa estava precisando
+                A solução que faltava <br /> para sua empresa crescer!
               </h2>
             </Reveal>
             <Reveal>
               <p className="max-w-3xl pl-4 text-sm font-medium md:pl-8 md:text-lg 2xl:text-lg">
-                Se você está em busca de ampliar a sua cartela de clientes,
-                expandir o seu negócio e oferecer mais vantagens para o
-                comprador fechar serviço com você ou comprar o seu produto, a
-                Ucred Serviços Financeiros vai te ajudar.
+                Mais clientes, mais vendas e mais lucro. Com a Ucred, você
+                amplia suas oportunidades, oferece condições de pagamento
+                atrativas e recebe o valor à vista. Tudo isso sem burocracia e
+                com total segurança.
               </p>
             </Reveal>
           </div>
@@ -484,7 +483,7 @@ export function CreditoParaEmpresaPage() {
                 title="Clique para entrar em contato conosco"
               >
                 <PhoneIcon className="mr-2 size-4" />
-                Comece agora
+                Quero os benefícios
               </Link>
             </Reveal>
           </div>
@@ -493,7 +492,7 @@ export function CreditoParaEmpresaPage() {
 
       <section className="rounded-bl-[3rem] rounded-tr-[3rem] bg-primary 2xl:rounded-br-[30rem] 2xl:rounded-tr-[30rem]">
         <div className="container flex flex-col items-start gap-10 py-14 lg:flex-row lg:gap-10">
-          <div className="flex-1 lg:sticky lg:top-[50rem] lg:pb-[6rem]">
+          <div className="flex-1 lg:sticky lg:top-[50rem] lg:pb-[7rem]">
             <div className="after:content=['*'] via-88% relative flex flex-col gap-1 from-secondary-1 via-secondary-2 via-50% to-secondary text-zinc-100 after:absolute after:h-full after:w-1 after:bg-gradient-to-b">
               <Reveal>
                 <h2 className="pl-4 text-2xl font-bold md:pl-8 md:text-3xl">
