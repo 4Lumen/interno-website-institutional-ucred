@@ -144,7 +144,7 @@ export function CreditoParaEmpresaPage() {
                 to="/cadastro-loja.pdf"
                 target="_blank"
                 className={cn(
-                  'text-md flex shrink-0 items-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0 md:mt-5',
+                  'text-md flex shrink-0 items-center justify-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0 md:mt-5',
                 )}
                 title="Clique para cadastrar minha empresa"
               >
@@ -319,7 +319,7 @@ export function CreditoParaEmpresaPage() {
                   to="/cadastro-loja.pdf"
                   target="_blank"
                   className={cn(
-                    'text-md mt-5 flex shrink-0 items-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0',
+                    'text-md mt-5 flex shrink-0 items-center justify-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0',
                   )}
                   title="Clique para oferecer crédito"
                 >

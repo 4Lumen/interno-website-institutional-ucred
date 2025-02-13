@@ -417,31 +417,7 @@ export function Footer() {
         </div>
       </section> */}
 
-      <footer className="bg-primary">
-        <div className="bg-primary-lighter">
-          <div className="container flex flex-col gap-7 py-6 lg:flex-row lg:items-center lg:py-4">
-            <Link
-              to="/"
-              title="Clique para voltar ao início"
-              className="shrink-0"
-            >
-              <img
-                className="h-14 w-28 object-cover"
-                alt="Logo da UCRED"
-                src="/logo-white.png"
-              />
-            </Link>
-
-            <p className="text-md font-medium text-zinc-200">
-              A UCRED Serviços Financeiros é uma correspondente bancária da
-              GIROTECH que está atuando há 17 anos no mercado financeiro
-              profissional. O nosso produto é o crédito pessoal, sem exigência
-              de garantias, com taxas que variam em função do perfil de crédito
-              de cada cliente.
-            </p>
-          </div>
-        </div>
-
+      <footer className="border-t-[25px] border-t-primary-lighter bg-primary">
         <div className="container grid w-full grid-cols-1 gap-10 py-14 md:grid-cols-2 lg:grid-cols-4 lg:gap-4">
           <div className="flex">
             <div className="flex w-full flex-col items-center text-center md:items-start md:text-left">
@@ -588,7 +564,7 @@ export function Footer() {
                   target="_blank"
                   title="Clique para ir ao nosso endereço"
                   className="flex items-center gap-2 transition-all hover:ml-2"
-                  to="https://www.google.com.br/maps/dir//UCred+-+R.+Tiradentes,+781+-+n%C2%BA+301+-+Centro,+Juiz+de+Fora+-+MG,+36015-360/@-21.762334,-43.3569938,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x989bec5f0efa97:0x37407cb0eaedc11!2m2!1d-43.3544189!2d-21.762334!3e0?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D"
+                  to="https://www.google.com.br/maps/dir//Rua+Emiliano+Perneta,+424+-+21+22+-+Centro,+Curitiba+-+PR,+80420-080/@-25.4359179,-49.2785628,16.89z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94dce4724f5fdef7:0x44194fc3336198b4!2m2!1d-49.2760563!2d-25.4353889?entry=ttu&g_ep=EgoyMDI1MDIxMC4wIKXMDSoASAFQAw%3D%3D"
                 >
                   Endereço
                 </Link>
