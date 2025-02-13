@@ -36,9 +36,11 @@ export function EmprestimoPessoalPage() {
 
       <Header />
 
-      <section className="rounded-b-[3rem] bg-primary bg-[url(/backgrounds/banner-pessoal.png)] bg-cover bg-top bg-no-repeat py-12 md:rounded-b-[5rem] lg:h-[calc(45rem-5rem)] lg:py-0">
+      <section className="rounded-b-[3rem] bg-primary bg-[url(/backgrounds/banner-pessoal-mobile.png)] bg-cover bg-top bg-no-repeat py-12 md:rounded-b-[5rem] lg:h-[calc(45rem-5rem)] lg:bg-[url(/backgrounds/banner-pessoal.png)] lg:py-0">
         <div className="relative h-full">
           <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
+            <div className="h-[150px] lg:hidden" />
+
             <div className="w-full flex-[1.2]">
               <Reveal classes="hidden md:block">
                 <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl xl:text-6xl xl:leading-[4rem]">

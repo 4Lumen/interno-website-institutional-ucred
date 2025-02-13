@@ -66,8 +66,10 @@ export function Home() {
             loop
             className="h-full"
           >
-            <SwiperSlide className="h-full w-full bg-[url(/backgrounds/banner-principal.png)] bg-cover bg-top bg-no-repeat py-12">
+            <SwiperSlide className="h-full w-full bg-[url(/backgrounds/banner-principal-mobile.png)] bg-cover bg-top bg-no-repeat py-12 lg:bg-[url(/backgrounds/banner-principal.png)]">
               <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
+                <div className="h-[150px] lg:hidden" />
+
                 <div className="w-full flex-[1.2]">
                   <Reveal classes="hidden md:block">
                     <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl xl:text-6xl xl:leading-[4rem]">
@@ -111,8 +113,10 @@ export function Home() {
               </div>
             </SwiperSlide>
 
-            <SwiperSlide className="w-full bg-[url(/backgrounds/banner-principal-alternativo.png)] bg-cover bg-top bg-no-repeat py-12">
+            <SwiperSlide className="w-full bg-[url(/backgrounds/banner-principal-alternativo-mobile.png)] bg-cover bg-top bg-no-repeat py-12 lg:bg-[url(/backgrounds/banner-principal-alternativo.png)]">
               <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
+                <div className="h-[150px] lg:hidden" />
+
                 <div className="w-full flex-[1.2]">
                   <Reveal classes="hidden md:block">
                     <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-4xl xl:text-6xl xl:leading-[4rem]">
