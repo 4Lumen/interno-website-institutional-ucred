@@ -227,7 +227,7 @@ export function Home() {
 
       <section className="mt-14 overflow-hidden rounded-tl-[3rem] border-y-2 border-zinc-200 bg-zinc-100 md:rounded-br-[4rem] md:rounded-tl-[4rem]">
         <div className="container flex flex-col gap-6 md:flex-row">
-          <div className="flex w-full flex-[1.2] flex-col justify-center py-10">
+          <div className="flex w-full flex-[1.1] flex-col justify-center py-10">
             <Reveal>
               <span className="text-xl font-semibold text-primary lg:text-2xl">
                 Soluções financeiras
@@ -277,11 +277,11 @@ export function Home() {
               </div>
             </Reveal>
           </div>
-          <div className="flex w-full flex-1 items-center justify-center bg-primary bg-about bg-cover bg-center bg-no-repeat pt-4">
+          <div className="flex w-full flex-1 items-center justify-center bg-primary">
             <img
+              src="/imagens/equipe.png"
               alt="Imagem uma mulher no telefone"
-              src="/imagens/mulher-telefone.png"
-              className="pointer-events-none h-full w-full select-none object-cover object-bottom"
+              className="pointer-events-none h-full w-full select-none object-cover"
             />
           </div>
         </div>

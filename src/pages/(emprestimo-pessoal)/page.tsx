@@ -36,7 +36,7 @@ export function EmprestimoPessoalPage() {
 
       <Header />
 
-      <section className="rounded-b-[3rem] bg-primary bg-banner bg-cover bg-center bg-no-repeat py-12 md:rounded-b-[5rem] lg:h-[calc(45rem-5rem)] lg:py-0">
+      <section className="rounded-b-[3rem] bg-primary bg-[url(/backgrounds/banner-pessoal.png)] bg-cover bg-top bg-no-repeat py-12 md:rounded-b-[5rem] lg:h-[calc(45rem-5rem)] lg:py-0">
         <div className="relative h-full">
           <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
             <div className="w-full flex-[1.2]">
@@ -59,7 +59,7 @@ export function EmprestimoPessoalPage() {
               </Reveal>
 
               <Reveal>
-                <p className="mt-4 text-lg text-zinc-200 md:text-xl lg:text-xl">
+                <p className="mt-4 max-w-2xl text-lg text-zinc-200 md:text-xl lg:text-xl">
                   Dinheiro rápido e sem complicação para você conquistar o que
                   deseja. Empréstimos de até R$ 3,5 mil, aprovados de forma
                   simples e segura, para que você possa investir em serviços ou
@@ -85,13 +85,7 @@ export function EmprestimoPessoalPage() {
               </Reveal>
             </div>
 
-            <div className="h-full w-full flex-[1.2] items-end lg:hidden xl:flex">
-              <img
-                src="/banner-hero.png"
-                className="h-full w-full object-contain object-bottom"
-                alt="Imagem de um homem no computador"
-              />
-            </div>
+            <div className="hidden flex-[0.6] lg:flex xl:flex-[0.8]" />
           </div>
         </div>
       </section>

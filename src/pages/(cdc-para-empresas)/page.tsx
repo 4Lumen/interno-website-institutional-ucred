@@ -37,12 +37,12 @@ export function CreditoParaEmpresaPage() {
 
       <Header />
 
-      <section className="rounded-b-[3rem] bg-primary bg-banner bg-cover bg-center bg-no-repeat py-12 md:rounded-b-[5rem] lg:h-[calc(45rem-5rem)] lg:py-0">
+      <section className="rounded-b-[3rem] bg-primary bg-[url(/backgrounds/banner-empresa.png)] bg-cover bg-center bg-no-repeat py-12 md:rounded-b-[5rem] lg:h-[calc(45rem-5rem)] lg:py-0">
         <div className="relative h-full">
           <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
             <div className="w-full flex-[1.2]">
               <Reveal classes="hidden md:block">
-                <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
+                <h2 className="text-3xl font-bold tracking-tight text-white md:text-5xl">
                   Transforme pagamentos <br /> parcelados em{' '}
                   <span className="bg-gradient-to-r from-secondary-1 via-secondary-3 to-secondary-4 bg-clip-text text-transparent">
                     dinheiro à vista
@@ -60,7 +60,7 @@ export function CreditoParaEmpresaPage() {
               </Reveal>
 
               <Reveal>
-                <p className="mt-4 text-lg text-zinc-200 md:text-xl lg:text-xl">
+                <p className="mt-4 max-w-2xl text-lg text-zinc-200 md:text-xl lg:text-xl">
                   Facilitamos o acesso ao crédito para que sua empresa venda
                   mais e seus clientes tenham mais poder de compra. Seu cliente
                   acompanha os gastos em tempo real, enquanto você recebe o
@@ -81,18 +81,12 @@ export function CreditoParaEmpresaPage() {
                   className="text-md mt-6 rounded-xl bg-white px-8 py-6 text-primary transition-all hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white"
                 >
                   <PlusIcon className="mr-2 size-4" />
-                  Saiba mais
+                  Quero saber mais
                 </Button>
               </Reveal>
             </div>
 
-            <div className="h-full w-full flex-[1.2] items-end lg:hidden xl:flex">
-              <img
-                src="/banner-hero.png"
-                className="h-full w-full object-contain object-bottom"
-                alt="Imagem de um homem no computador"
-              />
-            </div>
+            <div className="hidden flex-[0.6] lg:flex xl:flex-[0.8]" />
           </div>
         </div>
       </section>

@@ -35,7 +35,7 @@ export function CreditoParaEsteticaPage() {
 
       <Header />
 
-      <section className="rounded-b-[3rem] bg-primary bg-banner bg-cover bg-center bg-no-repeat py-12 md:rounded-b-[5rem] lg:h-[calc(45rem-5rem)] lg:py-0">
+      <section className="rounded-b-[3rem] bg-primary bg-[url(/backgrounds/banner-estetica.png)] bg-cover bg-center bg-no-repeat py-12 md:rounded-b-[5rem] lg:h-[calc(45rem-5rem)] lg:py-0">
         <div className="relative h-full">
           <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
             <div className="w-full flex-[1.2]">
@@ -60,7 +60,7 @@ export function CreditoParaEsteticaPage() {
               </Reveal>
 
               <Reveal>
-                <p className="mt-4 text-lg text-zinc-200 md:text-xl lg:text-xl">
+                <p className="mt-4 max-w-2xl text-lg text-zinc-200 md:text-xl lg:text-xl">
                   Facilite o pagamento para seus clientes, aumente a fidelização
                   e veja seus lucros crescerem com a Ucred ao seu lado.
                 </p>
@@ -79,18 +79,12 @@ export function CreditoParaEsteticaPage() {
                   className="text-md mt-6 rounded-xl bg-white px-8 py-6 text-primary transition-all hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white"
                 >
                   <PlusIcon className="mr-2 size-4" />
-                  Saiba mais
+                  Quero saber mais
                 </Button>
               </Reveal>
             </div>
 
-            <div className="h-full w-full flex-[1.2] items-end lg:hidden xl:flex">
-              <img
-                src="/banner-hero.png"
-                className="h-full w-full object-contain object-bottom"
-                alt="Imagem de um homem no computador"
-              />
-            </div>
+            <div className="hidden flex-[0.6] lg:flex xl:flex-[0.8]" />
           </div>
         </div>
       </section>
