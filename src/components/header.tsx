@@ -87,10 +87,7 @@ export function Header() {
           <div className="mx-6 hidden h-full py-6 lg:block">
             <Separator
               orientation="vertical"
-              className={cn(
-                'bg-white transition-colors',
-                isScrolled && 'bg-primary',
-              )}
+              className={cn('bg-white transition-colors')}
             />
           </div>
 
