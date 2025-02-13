@@ -50,7 +50,7 @@ export function Home() {
 
       <Header />
 
-      <section className="bg-primary bg-banner bg-cover bg-center bg-no-repeat py-12 lg:h-[calc(45rem-5rem)] lg:py-0">
+      <section className="bg-primary lg:h-[calc(45rem-5rem)] lg:py-0">
         <div className="relative h-full">
           <Swiper
             slidesPerView={1}
@@ -66,7 +66,7 @@ export function Home() {
             loop
             className="h-full"
           >
-            <SwiperSlide className="w-full">
+            <SwiperSlide className="h-full w-full bg-[url(/backgrounds/banner-principal.png)] bg-cover bg-center bg-no-repeat py-12">
               <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
                 <div className="w-full flex-[1.2]">
                   <Reveal classes="hidden md:block">
@@ -107,23 +107,17 @@ export function Home() {
                   </Reveal>
                 </div>
 
-                <div className="flex h-full w-full flex-[1.2] items-center py-4">
-                  <img
-                    src="/hero.png"
-                    className="h-full w-full object-contain object-right"
-                    alt="Imagem de um homem no computador"
-                  />
-                </div>
+                <div className="hidden flex-[0.6] lg:flex xl:flex-[0.8]" />
               </div>
             </SwiperSlide>
 
-            <SwiperSlide className="w-full">
+            <SwiperSlide className="w-full bg-[url(/backgrounds/banner-principal-alternativo.png)] bg-cover bg-center bg-no-repeat py-12">
               <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
                 <div className="w-full flex-[1.2]">
                   <Reveal classes="hidden md:block">
-                    <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-4xl xl:text-5xl xl:leading-[3.5rem]">
-                      Crédito rápido e sem complicação, a um clique de
-                      distância!
+                    <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-4xl xl:text-6xl xl:leading-[4rem]">
+                      Crédito rápido e <br /> sem complicação, a <br /> um{' '}
+                      clique de distância!
                     </h2>
                   </Reveal>
 
@@ -135,7 +129,7 @@ export function Home() {
                   </Reveal>
 
                   <Reveal>
-                    <p className="mt-4 text-lg text-zinc-200 md:text-xl lg:text-2xl">
+                    <p className="mt-4 max-w-2xl text-lg text-zinc-200 md:text-xl lg:text-2xl">
                       A solução financeira ágil que você precisa para tirar seus
                       planos do papel
                     </p>
@@ -154,19 +148,13 @@ export function Home() {
                   </Reveal>
                 </div>
 
-                <div className="flex h-full w-full flex-[1.2] items-center py-4">
-                  <img
-                    src="/hero-2.png"
-                    className="h-full w-full object-contain object-right"
-                    alt="Imagem de um homem no computador"
-                  />
-                </div>
+                <div className="hidden flex-[0.6] lg:flex xl:flex-[0.8]" />
               </div>
             </SwiperSlide>
           </Swiper>
 
-          <Reveal classes="w-full ">
-            <div className="container relative mt-10 flex justify-center lg:-mt-20 lg:block">
+          <Reveal classes="w-full py-5">
+            <div className="container relative flex justify-center lg:-mt-20 lg:block">
               <div className="z-20 inline-flex items-center gap-4 lg:absolute lg:left-4 lg:top-0">
                 <button className="custom-prev-main flex size-10 shrink-0 items-center justify-center rounded-full border-2 border-white text-white transition-all duration-500 ease-in-out hover:bg-white hover:text-primary">
                   <ChevronLeftIcon className="size-4" />
