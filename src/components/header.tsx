@@ -138,7 +138,7 @@ export function Header() {
           <div className="flex items-center gap-4">
             <Link
               target="_blank"
-              to="https://www3.ucred.net.br/login"
+              to="https://www5.ucred.net.br"
               className={cn(
                 'text-md hidden items-center rounded-xl border border-white bg-transparent px-8 py-3 text-white transition-all hover:bg-white hover:text-primary sm:flex',
               )}
