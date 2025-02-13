@@ -66,7 +66,7 @@ export function Home() {
             loop
             className="h-full"
           >
-            <SwiperSlide className="h-full w-full bg-[url(/backgrounds/banner-principal.png)] bg-cover bg-center bg-no-repeat py-12">
+            <SwiperSlide className="h-full w-full bg-[url(/backgrounds/banner-principal.png)] bg-cover bg-top bg-no-repeat py-12">
               <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
                 <div className="w-full flex-[1.2]">
                   <Reveal classes="hidden md:block">
@@ -111,7 +111,7 @@ export function Home() {
               </div>
             </SwiperSlide>
 
-            <SwiperSlide className="w-full bg-[url(/backgrounds/banner-principal-alternativo.png)] bg-cover bg-center bg-no-repeat py-12">
+            <SwiperSlide className="w-full bg-[url(/backgrounds/banner-principal-alternativo.png)] bg-cover bg-top bg-no-repeat py-12">
               <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
                 <div className="w-full flex-[1.2]">
                   <Reveal classes="hidden md:block">
