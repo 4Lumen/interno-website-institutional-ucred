@@ -50,7 +50,7 @@ export function Home() {
 
       <Header />
 
-      <section className="bg-primary lg:h-[calc(45rem-5rem)] lg:py-0">
+      <section className="bg-[#172D63] lg:h-[calc(45rem-5rem)] lg:py-0">
         <div className="relative h-full">
           <Swiper
             slidesPerView={1}
@@ -66,93 +66,97 @@ export function Home() {
             loop
             className="h-full"
           >
-            <SwiperSlide className="h-full w-full bg-[url(/backgrounds/banner-principal-mobile.png)] bg-cover bg-top bg-no-repeat py-12 lg:bg-[url(/backgrounds/banner-principal.png)]">
-              <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
-                <div className="h-[150px] lg:hidden" />
+            <SwiperSlide>
+              <div className="container mx-auto h-full w-full bg-[url(/backgrounds/banner-principal-mobile.png)] bg-cover bg-top bg-no-repeat py-12 lg:bg-[url(/backgrounds/banner-principal.png)]">
+                <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
+                  <div className="h-[150px] lg:hidden" />
 
-                <div className="w-full flex-[1.2]">
-                  <Reveal classes="hidden md:block">
-                    <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl xl:text-6xl xl:leading-[4rem]">
-                      Parcelado para o cliente, dinheiro à vista para você
-                    </h2>
-                  </Reveal>
+                  <div className="w-full flex-[1.2]">
+                    <Reveal classes="hidden md:block">
+                      <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl xl:text-6xl xl:leading-[4rem]">
+                        Parcelado para o cliente, dinheiro à vista para você
+                      </h2>
+                    </Reveal>
 
-                  <Reveal classes="block md:hidden">
-                    <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl xl:text-6xl xl:leading-[4rem]">
-                      Parcelado para o cliente, <br /> dinheiro à vista para
-                      você
-                    </h2>
-                  </Reveal>
+                    <Reveal classes="block md:hidden">
+                      <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl xl:text-6xl xl:leading-[4rem]">
+                        Parcelado para o cliente, <br /> dinheiro à vista para
+                        você
+                      </h2>
+                    </Reveal>
 
-                  <Reveal>
-                    <p className="mt-4 text-lg text-zinc-200 md:text-xl lg:text-2xl">
-                      Crédito direto ao consumidor de procedimentos estéticos,
-                      produtos ou serviços é na UCRED!
-                    </p>
-                  </Reveal>
+                    <Reveal>
+                      <p className="mt-4 text-lg text-zinc-200 md:text-xl lg:text-2xl">
+                        Crédito direto ao consumidor de procedimentos estéticos,
+                        produtos ou serviços é na UCRED!
+                      </p>
+                    </Reveal>
 
-                  <Reveal>
-                    <Button
-                      type="button"
-                      title="Clique para saber mais"
-                      onClick={() =>
-                        window.scroll({
-                          behavior: 'smooth',
-                          top: 500,
-                        })
-                      }
-                      className="text-md mt-6 rounded-xl bg-white px-8 py-6 text-primary transition-all hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white"
-                    >
-                      <PlusIcon className="mr-2 size-4" />
-                      Entenda como
-                    </Button>
-                  </Reveal>
+                    <Reveal>
+                      <Button
+                        type="button"
+                        title="Clique para saber mais"
+                        onClick={() =>
+                          window.scroll({
+                            behavior: 'smooth',
+                            top: 500,
+                          })
+                        }
+                        className="text-md mt-6 rounded-xl bg-white px-8 py-6 text-primary transition-all hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white"
+                      >
+                        <PlusIcon className="mr-2 size-4" />
+                        Entenda como
+                      </Button>
+                    </Reveal>
+                  </div>
+
+                  <div className="hidden flex-[0.6] lg:flex xl:flex-[0.8]" />
                 </div>
-
-                <div className="hidden flex-[0.6] lg:flex xl:flex-[0.8]" />
               </div>
             </SwiperSlide>
 
-            <SwiperSlide className="w-full bg-[url(/backgrounds/banner-principal-alternativo-mobile.png)] bg-cover bg-top bg-no-repeat py-12 lg:bg-[url(/backgrounds/banner-principal-alternativo.png)]">
-              <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
-                <div className="h-[150px] lg:hidden" />
+            <SwiperSlide>
+              <div className="container mx-auto h-full w-full bg-[url(/backgrounds/banner-principal-alternativo-mobile.png)] bg-cover bg-top bg-no-repeat py-12 lg:bg-[url(/backgrounds/banner-principal-alternativo.png)]">
+                <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
+                  <div className="h-[150px] lg:hidden" />
 
-                <div className="w-full flex-[1.2]">
-                  <Reveal classes="hidden md:block">
-                    <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-4xl xl:text-6xl xl:leading-[4rem]">
-                      Crédito rápido e <br /> sem complicação, a <br /> um{' '}
-                      clique de distância!
-                    </h2>
-                  </Reveal>
+                  <div className="w-full flex-[1.2]">
+                    <Reveal classes="hidden md:block">
+                      <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-4xl xl:text-6xl xl:leading-[4rem]">
+                        Crédito rápido e <br /> sem complicação, a <br /> um{' '}
+                        clique de distância!
+                      </h2>
+                    </Reveal>
 
-                  <Reveal classes="block md:hidden">
-                    <h2 className="block text-2xl font-bold tracking-tight text-white md:hidden md:text-4xl lg:text-5xl xl:text-6xl xl:leading-[4rem]">
-                      Crédito rápido e sem <br /> complicação, a um clique de
-                      distância!
-                    </h2>
-                  </Reveal>
+                    <Reveal classes="block md:hidden">
+                      <h2 className="block text-2xl font-bold tracking-tight text-white md:hidden md:text-4xl lg:text-5xl xl:text-6xl xl:leading-[4rem]">
+                        Crédito rápido e sem <br /> complicação, a um clique de
+                        distância!
+                      </h2>
+                    </Reveal>
 
-                  <Reveal>
-                    <p className="mt-4 max-w-2xl text-lg text-zinc-200 md:text-xl lg:text-2xl">
-                      A solução financeira ágil que você precisa para tirar seus
-                      planos do papel
-                    </p>
-                  </Reveal>
+                    <Reveal>
+                      <p className="mt-4 max-w-2xl text-lg text-zinc-200 md:text-xl lg:text-2xl">
+                        A solução financeira ágil que você precisa para tirar
+                        seus planos do papel
+                      </p>
+                    </Reveal>
 
-                  <Reveal>
-                    <Link
-                      target="_blank"
-                      title="Clique para falar conosco"
-                      to="https://api.whatsapp.com/send?phone=554131954559&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
-                      className="text-md mt-6 inline-flex items-center rounded-xl bg-white px-8 py-3 text-primary transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white"
-                    >
-                      <PlusIcon className="mr-2 size-4" />
-                      Fale conosco
-                    </Link>
-                  </Reveal>
+                    <Reveal>
+                      <Link
+                        target="_blank"
+                        title="Clique para falar conosco"
+                        to="https://api.whatsapp.com/send?phone=554131954559&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+                        className="text-md mt-6 inline-flex items-center rounded-xl bg-white px-8 py-3 text-primary transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white"
+                      >
+                        <PlusIcon className="mr-2 size-4" />
+                        Fale conosco
+                      </Link>
+                    </Reveal>
+                  </div>
+
+                  <div className="hidden flex-[0.6] lg:flex xl:flex-[0.8]" />
                 </div>
-
-                <div className="hidden flex-[0.6] lg:flex xl:flex-[0.8]" />
               </div>
             </SwiperSlide>
           </Swiper>

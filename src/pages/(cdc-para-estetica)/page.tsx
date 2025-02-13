@@ -35,8 +35,8 @@ export function CreditoParaEsteticaPage() {
 
       <Header />
 
-      <section className="rounded-b-[3rem] bg-primary bg-[url(/backgrounds/banner-estetica-mobile.png)] bg-cover bg-top bg-no-repeat py-12 md:rounded-b-[5rem] lg:h-[calc(45rem-5rem)] lg:bg-[url(/backgrounds/banner-estetica.png)] lg:bg-center lg:py-0">
-        <div className="relative h-full">
+      <section className="rounded-b-[3rem] bg-[#172D63] py-12 md:rounded-b-[5rem] lg:h-[calc(45rem-5rem)] lg:py-0">
+        <div className="container relative mx-auto h-full bg-[url(/backgrounds/banner-estetica-mobile.png)] bg-cover bg-top bg-no-repeat lg:bg-[url(/backgrounds/banner-estetica.png)] lg:bg-center">
           <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
             <div className="h-[150px] lg:hidden" />
 
