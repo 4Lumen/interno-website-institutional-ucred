@@ -37,7 +37,7 @@ export function CreditoParaEmpresaPage() {
 
       <Header />
 
-      <section className="rounded-b-[3rem] bg-[#172D63] py-12 md:rounded-b-[5rem] lg:h-[calc(45rem-5rem)] lg:py-0">
+      <section className="overflow-hidden rounded-b-[3rem] bg-[#172D63] py-12 md:rounded-b-[5rem] lg:h-[calc(45rem-5rem)] lg:py-0">
         <div className="container relative mx-auto h-full bg-[url(/backgrounds/banner-empresa-mobile.png)] bg-cover bg-top bg-no-repeat lg:bg-[url(/backgrounds/banner-empresa.png)] lg:py-0">
           <div className="container flex h-full w-full flex-col items-center gap-12 lg:flex-row">
             <div className="h-[150px] lg:hidden" />
