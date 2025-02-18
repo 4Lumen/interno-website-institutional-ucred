@@ -25,18 +25,18 @@ import {
 import { Button } from './ui/button'
 
 const formContactSchema = z.object({
-  firstName: z
+  Primeiro_Nome: z
     .string()
     .min(2, 'O primeiro nome deve ter pelo menos 2 caracteres'),
-  lastName: z
+  Segundo_Nome: z
     .string()
     .min(2, 'O segundo nome deve ter pelo menos 2 caracteres'),
-  email: z.string().email('Digite um e-mail válido'),
-  phone: z
+  E_mail: z.string().email('Digite um e-mail válido'),
+  Telefone: z
     .string()
     .regex(/^\d+$/, 'O telefone deve conter apenas números')
     .min(10, 'O telefone deve ter pelo menos 10 dígitos'),
-  message: z.string().min(5, 'A mensagem deve ter pelo menos 5 caracteres'),
+  Mensagem: z.string().min(5, 'A mensagem deve ter pelo menos 5 caracteres'),
 })
 
 export function Footer() {
@@ -55,11 +55,11 @@ export function Footer() {
     setIsLoading(true)
     const form = document.createElement('form')
     form.method = 'POST'
-    form.action = 'https://formsubmit.co/contato@ucred.net.br'
+    form.action = 'https://formsubmit.co/3c85ddf1d6ba62ca74d4e428eb623be0'
 
     Object.entries({
       ...data,
-      _next: 'http://localhost:5173',
+      _next: window.location.origin,
       _subject: 'Novo contato do site!',
       _captcha: 'false',
       _autoresponse: 'Recebemos sua mensagem!',
@@ -340,14 +340,14 @@ export function Footer() {
                 <label className="text-zinc-600">Primeiro nome</label>
                 <input
                   type="text"
-                  {...form.register('firstName')}
+                  {...form.register('Primeiro_Nome')}
                   placeholder="Digite seu primeiro nome"
                   disabled={isLoading}
                   className="mt-1 h-12 w-full rounded-md border px-4 outline-none transition-all focus:ring-4 focus:ring-primary"
                 />
-                {form.formState.errors.firstName && (
+                {form.formState.errors.Primeiro_Nome && (
                   <p className="mt-2 text-sm text-red-500">
-                    {form.formState.errors.firstName.message}
+                    {form.formState.errors.Primeiro_Nome.message}
                   </p>
                 )}
               </div>
@@ -356,14 +356,14 @@ export function Footer() {
                 <label className="text-zinc-600">Segundo nome</label>
                 <input
                   type="text"
-                  {...form.register('lastName')}
+                  {...form.register('Segundo_Nome')}
                   disabled={isLoading}
                   placeholder="Digite seu segundo nome"
                   className="mt-1 h-12 w-full rounded-md border px-4 outline-none transition-all focus:ring-4 focus:ring-primary"
                 />
-                {form.formState.errors.lastName && (
+                {form.formState.errors.Segundo_Nome && (
                   <p className="mt-2 text-sm text-red-500">
-                    {form.formState.errors.lastName.message}
+                    {form.formState.errors.Segundo_Nome.message}
                   </p>
                 )}
               </div>
@@ -373,14 +373,14 @@ export function Footer() {
               <label className="text-zinc-600">Endereço de e-mail</label>
               <input
                 type="text"
-                {...form.register('email')}
+                {...form.register('E_mail')}
                 disabled={isLoading}
                 placeholder="Digite seu endereço de e-mail"
                 className="mt-1 h-12 w-full rounded-md border px-4 outline-none transition-all focus:ring-4 focus:ring-primary"
               />
-              {form.formState.errors.email && (
+              {form.formState.errors.E_mail && (
                 <p className="mt-2 text-sm text-red-500">
-                  {form.formState.errors.email.message}
+                  {form.formState.errors.E_mail.message}
                 </p>
               )}
             </div>
@@ -389,14 +389,14 @@ export function Footer() {
               <label className="text-zinc-600">Telefone/WhatsApp</label>
               <input
                 type="text"
-                {...form.register('phone')}
+                {...form.register('Telefone')}
                 disabled={isLoading}
                 placeholder="Digite seu Telefone/WhatsApp"
                 className="mt-1 h-12 w-full rounded-md border px-4 outline-none transition-all focus:ring-4 focus:ring-primary"
               />
-              {form.formState.errors.phone && (
+              {form.formState.errors.Telefone && (
                 <p className="mt-2 text-sm text-red-500">
-                  {form.formState.errors.phone.message}
+                  {form.formState.errors.Telefone.message}
                 </p>
               )}
             </div>
@@ -404,14 +404,14 @@ export function Footer() {
             <div className="w-full">
               <label className="text-zinc-600">Mensagem</label>
               <textarea
-                {...form.register('message')}
+                {...form.register('Mensagem')}
                 disabled={isLoading}
                 placeholder="Digite sua mensagem"
                 className="mt-1 h-12 max-h-28 min-h-28 w-full resize-none rounded-md border p-4 outline-none transition-all focus:ring-4 focus:ring-primary"
               />
-              {form.formState.errors.message && (
+              {form.formState.errors.Mensagem && (
                 <p className="mt-2 text-sm text-red-500">
-                  {form.formState.errors.message.message}
+                  {form.formState.errors.Mensagem.message}
                 </p>
               )}
             </div>
