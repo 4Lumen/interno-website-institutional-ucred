@@ -1,14 +1,18 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { zodResolver } from '@hookform/resolvers/zod'
 import { format } from 'date-fns'
 import {
   ChevronDown,
+  Loader2,
   MailIcon,
   PhoneIcon,
   SendHorizonalIcon,
 } from 'lucide-react'
 import { useRef, useState } from 'react'
+import { useForm } from 'react-hook-form'
 import { PiFacebookLogo, PiInstagramLogo, PiWhatsappLogo } from 'react-icons/pi'
 import { Link, useLocation } from 'react-router-dom'
+import { z } from 'zod'
 
 import { cn } from '../@config/lib/cn'
 import { Reveal } from './reveal'
@@ -20,12 +24,57 @@ import {
 } from './ui/accordion'
 import { Button } from './ui/button'
 
+const formContactSchema = z.object({
+  firstName: z
+    .string()
+    .min(2, 'O primeiro nome deve ter pelo menos 2 caracteres'),
+  lastName: z
+    .string()
+    .min(2, 'O segundo nome deve ter pelo menos 2 caracteres'),
+  email: z.string().email('Digite um e-mail válido'),
+  phone: z
+    .string()
+    .regex(/^\d+$/, 'O telefone deve conter apenas números')
+    .min(10, 'O telefone deve ter pelo menos 10 dígitos'),
+  message: z.string().min(5, 'A mensagem deve ter pelo menos 5 caracteres'),
+})
+
 export function Footer() {
   const { pathname } = useLocation()
   const refData: any = useRef()
   const refDataButton: any = useRef()
 
   const [hasToggleData, setHasToggleData] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+
+  const form = useForm({
+    resolver: zodResolver<z.infer<typeof formContactSchema>>(formContactSchema),
+  })
+
+  const onSubmit = (data: z.infer<typeof formContactSchema>) => {
+    setIsLoading(true)
+    const form = document.createElement('form')
+    form.method = 'POST'
+    form.action = 'https://formsubmit.co/contato@ucred.net.br'
+
+    Object.entries({
+      ...data,
+      _next: 'http://localhost:5173',
+      _subject: 'Novo contato do site!',
+      _captcha: 'false',
+      _autoresponse: 'Recebemos sua mensagem!',
+      _template: 'table',
+    }).forEach(([key, value]) => {
+      const input = document.createElement('input')
+      input.type = 'hidden'
+      input.name = key
+      input.value = value as string
+      form.appendChild(input)
+    })
+
+    document.body.appendChild(form)
+    form.submit()
+  }
 
   return (
     <>
@@ -283,6 +332,7 @@ export function Footer() {
 
           <form
             method="POST"
+            onSubmit={form.handleSubmit(onSubmit)}
             className="w-full space-y-5 rounded-md border bg-zinc-50 p-5"
           >
             <div className="flex flex-col items-start gap-5 md:flex-row">
@@ -290,18 +340,32 @@ export function Footer() {
                 <label className="text-zinc-600">Primeiro nome</label>
                 <input
                   type="text"
+                  {...form.register('firstName')}
                   placeholder="Digite seu primeiro nome"
+                  disabled={isLoading}
                   className="mt-1 h-12 w-full rounded-md border px-4 outline-none transition-all focus:ring-4 focus:ring-primary"
                 />
+                {form.formState.errors.firstName && (
+                  <p className="mt-2 text-sm text-red-500">
+                    {form.formState.errors.firstName.message}
+                  </p>
+                )}
               </div>
 
               <div className="w-full">
                 <label className="text-zinc-600">Segundo nome</label>
                 <input
                   type="text"
+                  {...form.register('lastName')}
+                  disabled={isLoading}
                   placeholder="Digite seu segundo nome"
                   className="mt-1 h-12 w-full rounded-md border px-4 outline-none transition-all focus:ring-4 focus:ring-primary"
                 />
+                {form.formState.errors.lastName && (
+                  <p className="mt-2 text-sm text-red-500">
+                    {form.formState.errors.lastName.message}
+                  </p>
+                )}
               </div>
             </div>
 
@@ -309,34 +373,59 @@ export function Footer() {
               <label className="text-zinc-600">Endereço de e-mail</label>
               <input
                 type="text"
+                {...form.register('email')}
+                disabled={isLoading}
                 placeholder="Digite seu endereço de e-mail"
                 className="mt-1 h-12 w-full rounded-md border px-4 outline-none transition-all focus:ring-4 focus:ring-primary"
               />
+              {form.formState.errors.email && (
+                <p className="mt-2 text-sm text-red-500">
+                  {form.formState.errors.email.message}
+                </p>
+              )}
             </div>
 
             <div className="w-full">
               <label className="text-zinc-600">Telefone/WhatsApp</label>
               <input
                 type="text"
+                {...form.register('phone')}
+                disabled={isLoading}
                 placeholder="Digite seu Telefone/WhatsApp"
                 className="mt-1 h-12 w-full rounded-md border px-4 outline-none transition-all focus:ring-4 focus:ring-primary"
               />
+              {form.formState.errors.phone && (
+                <p className="mt-2 text-sm text-red-500">
+                  {form.formState.errors.phone.message}
+                </p>
+              )}
             </div>
 
             <div className="w-full">
               <label className="text-zinc-600">Mensagem</label>
               <textarea
+                {...form.register('message')}
+                disabled={isLoading}
                 placeholder="Digite sua mensagem"
                 className="mt-1 h-12 max-h-28 min-h-28 w-full resize-none rounded-md border p-4 outline-none transition-all focus:ring-4 focus:ring-primary"
               />
+              {form.formState.errors.message && (
+                <p className="mt-2 text-sm text-red-500">
+                  {form.formState.errors.message.message}
+                </p>
+              )}
             </div>
 
             <Button
-              type="button"
-              title="Clique para enviar a mensagem"
+              type="submit"
+              disabled={isLoading}
               className="text-md h-12 w-full font-semibold text-white"
             >
-              <SendHorizonalIcon className="mr-2 size-4" />
+              {isLoading ? (
+                <Loader2 className="mr-2 size-4 animate-spin" />
+              ) : (
+                <SendHorizonalIcon className="mr-2 size-4" />
+              )}
               Enviar mensagem
             </Button>
           </form>

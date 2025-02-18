@@ -13,7 +13,7 @@ export function AcceptCookies() {
 
   if (!isCookie) {
     return (
-      <div className="fixed bottom-0 left-0 z-10 w-full rounded-md border-4 border-zinc-200 bg-zinc-100 p-3 shadow-lg md:bottom-3 md:left-3 md:max-w-[40rem]">
+      <div className="fixed bottom-0 left-0 z-50 w-full rounded-md border-4 border-zinc-200 bg-zinc-100 p-3 shadow-lg md:bottom-3 md:left-3 md:max-w-[40rem]">
         <h2 className="flex items-center text-xl font-semibold text-zinc-600">
           <CookieIcon className="mr-2 size-4" />
           Esse site utiliza cookies
