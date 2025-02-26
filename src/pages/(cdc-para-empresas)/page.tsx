@@ -124,16 +124,16 @@ export function CreditoParaEmpresaPage() {
                   <br />
                   <br />
                   Atendemos diversos segmentos: <br />
-                  <div className="mt-5 grid grid-cols-1 gap-10 xl:grid-cols-4">
+                  <div className="mt-5 grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-4">
                     <div className="pointer-events-none inline-flex select-none items-center gap-4 rounded-full text-zinc-600">
                       <div className="flex size-20 shrink-0 items-center justify-center rounded-full border-4 border-zinc-400">
                         <Car className="size-10" />
                       </div>
                       <div>
-                        <h2 className="text-xl font-bold md:text-2xl">
+                        <h2 className="text-xl font-bold md:text-xl">
                           Autocenters
                         </h2>
-                        <p>
+                        <p className="text-sm">
                           Facilite a manutenção <br /> veicular dos seus
                           clientes.
                         </p>
@@ -144,10 +144,12 @@ export function CreditoParaEmpresaPage() {
                         <DogIcon className="size-10" />
                       </div>
                       <div>
-                        <h2 className="text-xl font-bold md:text-2xl">
+                        <h2 className="truncate text-xl font-bold md:text-xl">
                           Clínicas veterinárias
                         </h2>
-                        <p>Opções acessíveis para os tutores</p>
+                        <p className="text-sm">
+                          Opções acessíveis para os tutores
+                        </p>
                       </div>
                     </div>{' '}
                     <div className="pointer-events-none inline-flex select-none items-center gap-4 rounded-full text-zinc-600">
@@ -155,10 +157,12 @@ export function CreditoParaEmpresaPage() {
                         <DogIcon className="size-10" />
                       </div>
                       <div>
-                        <h2 className="text-xl font-bold md:text-2xl">
-                          Varejo de móveis e eletrodomésticos
+                        <h2 className="text-xl font-bold md:text-xl">
+                          Móveis & Eletro
                         </h2>
-                        <p>Aumente as vendas com mais flexibilidade.</p>
+                        <p className="text-sm">
+                          Aumente as vendas com mais flexibilidade.
+                        </p>
                       </div>
                     </div>{' '}
                     <div className="pointer-events-none inline-flex select-none items-center gap-4 rounded-full text-zinc-600">
@@ -166,10 +170,12 @@ export function CreditoParaEmpresaPage() {
                         <DogIcon className="size-10" />
                       </div>
                       <div>
-                        <h2 className="text-xl font-bold md:text-2xl">
+                        <h2 className="truncate text-xl font-bold md:text-xl">
                           Clínicas de estética
                         </h2>
-                        <p>Mais acessibilidade para tratamentos e pacotes.</p>
+                        <p className="text-sm">
+                          Mais acessibilidade para tratamentos e pacotes.
+                        </p>
                       </div>
                     </div>{' '}
                   </div>
@@ -178,7 +184,7 @@ export function CreditoParaEmpresaPage() {
             </div>
           </div>
 
-          <Reveal classes="">
+          {/* <Reveal classes="flex justify-center">
             <Link
               to="https://api.whatsapp.com/send?phone=554131954559"
               target="_blank"
@@ -190,9 +196,9 @@ export function CreditoParaEmpresaPage() {
               <PlusIcon className="mr-2 size-4" />
               Quero mais vendas!
             </Link>
-          </Reveal>
+          </Reveal> */}
 
-          <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-20 grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
             <Reveal>
               <div>
                 <div className="flex size-16 shrink-0 items-center justify-center rounded-lg bg-primary-lighter text-white">
