@@ -1,9 +1,7 @@
 import {
   BuildingIcon,
-  Car,
   ChevronLeftIcon,
   ChevronRightIcon,
-  DogIcon,
   DollarSignIcon,
   EyeIcon,
   PhoneCallIcon,
@@ -120,14 +118,18 @@ export function CreditoParaEmpresaPage() {
                   <br />
                   Nosso sistema é 100% digital e intuitivo, permitindo que você
                   tenha controle total das operações e receba suporte
-                  especializado sempre que precisar.”
+                  especializado sempre que precisar.
                   <br />
                   <br />
                   Atendemos diversos segmentos: <br />
                   <div className="mt-5 grid grid-cols-1 gap-10 lg:grid-cols-2 xl:grid-cols-4">
                     <div className="pointer-events-none inline-flex select-none items-center gap-4 rounded-full text-zinc-600">
                       <div className="flex size-20 shrink-0 items-center justify-center rounded-full border-4 border-zinc-400">
-                        <Car className="size-10" />
+                        <img
+                          src="/icons/maintenance.svg"
+                          alt="Ícone"
+                          className="size-10 opacity-75"
+                        />
                       </div>
                       <div>
                         <h2 className="text-xl font-bold md:text-xl">
@@ -141,7 +143,11 @@ export function CreditoParaEmpresaPage() {
                     </div>{' '}
                     <div className="pointer-events-none inline-flex select-none items-center gap-4 rounded-full text-zinc-600">
                       <div className="flex size-20 shrink-0 items-center justify-center rounded-full border-4 border-zinc-400">
-                        <DogIcon className="size-10" />
+                        <img
+                          src="/icons/stethoscope.svg"
+                          alt="Ícone"
+                          className="size-10 opacity-50"
+                        />
                       </div>
                       <div>
                         <h2 className="truncate text-xl font-bold md:text-xl">
@@ -154,7 +160,11 @@ export function CreditoParaEmpresaPage() {
                     </div>{' '}
                     <div className="pointer-events-none inline-flex select-none items-center gap-4 rounded-full text-zinc-600">
                       <div className="flex size-20 shrink-0 items-center justify-center rounded-full border-4 border-zinc-400">
-                        <DogIcon className="size-10" />
+                        <img
+                          src="/icons/fridge.svg"
+                          alt="Ícone"
+                          className="size-10 opacity-75"
+                        />
                       </div>
                       <div>
                         <h2 className="text-xl font-bold md:text-xl">
@@ -167,7 +177,11 @@ export function CreditoParaEmpresaPage() {
                     </div>{' '}
                     <div className="pointer-events-none inline-flex select-none items-center gap-4 rounded-full text-zinc-600">
                       <div className="flex size-20 shrink-0 items-center justify-center rounded-full border-4 border-zinc-400">
-                        <DogIcon className="size-10" />
+                        <img
+                          src="/icons/botox.svg"
+                          alt="Ícone"
+                          className="size-10 opacity-75"
+                        />{' '}
                       </div>
                       <div>
                         <h2 className="truncate text-xl font-bold md:text-xl">
