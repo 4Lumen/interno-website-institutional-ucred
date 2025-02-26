@@ -63,7 +63,7 @@ export function EmprestimoPessoalPage() {
               <Reveal>
                 <p className="mt-4 max-w-2xl text-lg text-zinc-200 md:text-xl lg:text-xl">
                   Dinheiro rápido e sem complicação para você conquistar o que
-                  deseja. Empréstimos de até R$ 3,5 mil, aprovados de forma
+                  deseja. Empréstimos de até R$ 3,5 mil aprovados de forma
                   simples e segura, para que você possa investir em serviços ou
                   produtos sem pesar no bolso.
                 </p>
@@ -177,7 +177,7 @@ export function EmprestimoPessoalPage() {
                   </h2>
                   <p className="text-md mt-1 font-medium text-zinc-600">
                     Gerencie seu crédito, acompanhe pagamentos e controle suas
-                    parcelas de onde estiver. Com a Ucred, você tem
+                    parcelas de onde estiver. Com a Ucred você tem
                     transparência, segurança e suporte em todas as etapas.
                   </p>
                 </div>
@@ -224,7 +224,10 @@ export function EmprestimoPessoalPage() {
                     1
                   </div>
                   <p>
-                    💳 Escolha o valor ideal para você <br />
+                    <strong className="text-lg text-zinc-800">
+                      Escolha o valor ideal para você
+                    </strong>{' '}
+                    <br />
                     Selecione um valor entre R$ 500 e R$ 3.500 para aliviar o
                     bolso ou realizar seus planos.
                   </p>
@@ -237,7 +240,10 @@ export function EmprestimoPessoalPage() {
                     2
                   </div>
                   <p>
-                    📆 Defina as parcelas que cabem no seu orçamento <br />
+                    <strong className="text-lg text-zinc-800">
+                      Defina as parcelas que cabem no seu orçamento
+                    </strong>{' '}
+                    <br />
                     Pague de forma flexível em 6, 9, 10, 12 ou 15 vezes.
                   </p>
                 </div>
@@ -253,7 +259,10 @@ export function EmprestimoPessoalPage() {
                     3
                   </div>
                   <p>
-                    📝 Cadastre-se de forma segura <br />
+                    <strong className="text-lg text-zinc-800">
+                      Cadastre-se de forma segura
+                    </strong>{' '}
+                    <br />
                     Preencha seus dados e aguarde a análise do seu crédito.
                     Certifique-se de que os dados bancários estão corretos para
                     um depósito rápido.
@@ -267,7 +276,10 @@ export function EmprestimoPessoalPage() {
                     4
                   </div>
                   <p>
-                    🔏 Assine e confirme <br />
+                    <strong className="text-lg text-zinc-800">
+                      Assine e confirme
+                    </strong>{' '}
+                    <br />
                     Após aprovação, realize a identificação biométrica e assine
                     o contrato digitalmente para liberar seu crédito.
                   </p>
@@ -283,7 +295,10 @@ export function EmprestimoPessoalPage() {
                   5
                 </div>
                 <p>
-                  💰 Receba o dinheiro na sua conta <br />
+                  <strong className="text-lg text-zinc-800">
+                    Receba o dinheiro na sua conta
+                  </strong>{' '}
+                  <br />
                   Após a assinatura, o valor será depositado automaticamente.
                   Simples, rápido e sem complicação!
                 </p>
@@ -298,14 +313,15 @@ export function EmprestimoPessoalPage() {
                   6
                 </div>
                 <p className="font-semibold text-zinc-600 lg:text-2xl">
-                  🎯 Agora é com você! <br />
+                  <strong className="text-zinc-800">Agora é com você!</strong>{' '}
+                  <br />
                   Clique abaixo e solicite o seu crédito pessoal agora mesmo.
                 </p>
               </div>
 
               <Reveal>
                 <Link
-                  to="https://www3.ucred.net.br/novo-cliente"
+                  to="https://www5.ucred.net.br"
                   target="_blank"
                   className={cn(
                     'text-md mt-5 flex shrink-0 items-center justify-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0',
@@ -509,7 +525,7 @@ export function EmprestimoPessoalPage() {
             <Reveal>
               <Link
                 target="_blank"
-                to="https://www3.ucred.net.br/novo-cliente"
+                to="https://www5.ucred.net.br"
                 title="Clique para saber mais"
                 className="text-md mt-6 inline-flex items-center justify-center rounded-xl bg-white px-8 py-3 text-primary transition-all hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white"
               >

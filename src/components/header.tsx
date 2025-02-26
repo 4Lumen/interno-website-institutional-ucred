@@ -1,4 +1,4 @@
-import { InfoIcon, MenuIcon, PhoneIcon, UserIcon, XIcon } from 'lucide-react'
+import { InfoIcon, MenuIcon, PhoneIcon, XIcon } from 'lucide-react'
 import { useState } from 'react'
 import { FaFacebookF, FaWhatsapp } from 'react-icons/fa'
 import { PiInstagramLogoThin } from 'react-icons/pi'
@@ -136,7 +136,7 @@ export function Header() {
 
         {!hasToggleStripe && (
           <div className="flex items-center gap-4">
-            <Link
+            {/* <Link
               target="_blank"
               to="https://www5.ucred.net.br"
               className={cn(
@@ -146,7 +146,7 @@ export function Header() {
             >
               <UserIcon className="mr-2 size-4" />
               Acessar minha conta
-            </Link>
+            </Link> */}
 
             <Link
               to="https://api.whatsapp.com/send?phone=554131954559&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"

@@ -1,7 +1,9 @@
 import {
   BuildingIcon,
+  Car,
   ChevronLeftIcon,
   ChevronRightIcon,
+  DogIcon,
   DollarSignIcon,
   EyeIcon,
   PhoneCallIcon,
@@ -118,37 +120,77 @@ export function CreditoParaEmpresaPage() {
                   <br />
                   Nosso sistema é 100% digital e intuitivo, permitindo que você
                   tenha controle total das operações e receba suporte
-                  especializado sempre que precisar.” Sugestão: Transformar os
-                  segmentos em ícones para leitura rápida.
+                  especializado sempre que precisar.”
                   <br />
                   <br />
-                  “Atendemos diversos segmentos: <br />
-                  🚗 Autocenters – Facilite a manutenção veicular dos seus
-                  clientes. <br />
-                  🐶 Clínicas veterinárias – Opções acessíveis para os tutores
-                  cuidarem dos pets. <br />
-                  🛋️ Varejo de móveis e eletrodomésticos – Aumente as vendas com
-                  mais flexibilidade. <br />
-                  💆‍♀️ Clínicas de estética – Mais acessibilidade para tratamentos
-                  e pacotes.
+                  Atendemos diversos segmentos: <br />
+                  <div className="mt-5 grid grid-cols-1 gap-10 xl:grid-cols-4">
+                    <div className="pointer-events-none inline-flex select-none items-center gap-4 rounded-full text-zinc-600">
+                      <div className="flex size-20 shrink-0 items-center justify-center rounded-full border-4 border-zinc-400">
+                        <Car className="size-10" />
+                      </div>
+                      <div>
+                        <h2 className="text-xl font-bold md:text-2xl">
+                          Autocenters
+                        </h2>
+                        <p>
+                          Facilite a manutenção <br /> veicular dos seus
+                          clientes.
+                        </p>
+                      </div>
+                    </div>{' '}
+                    <div className="pointer-events-none inline-flex select-none items-center gap-4 rounded-full text-zinc-600">
+                      <div className="flex size-20 shrink-0 items-center justify-center rounded-full border-4 border-zinc-400">
+                        <DogIcon className="size-10" />
+                      </div>
+                      <div>
+                        <h2 className="text-xl font-bold md:text-2xl">
+                          Clínicas veterinárias
+                        </h2>
+                        <p>Opções acessíveis para os tutores</p>
+                      </div>
+                    </div>{' '}
+                    <div className="pointer-events-none inline-flex select-none items-center gap-4 rounded-full text-zinc-600">
+                      <div className="flex size-20 shrink-0 items-center justify-center rounded-full border-4 border-zinc-400">
+                        <DogIcon className="size-10" />
+                      </div>
+                      <div>
+                        <h2 className="text-xl font-bold md:text-2xl">
+                          Varejo de móveis e eletrodomésticos
+                        </h2>
+                        <p>Aumente as vendas com mais flexibilidade.</p>
+                      </div>
+                    </div>{' '}
+                    <div className="pointer-events-none inline-flex select-none items-center gap-4 rounded-full text-zinc-600">
+                      <div className="flex size-20 shrink-0 items-center justify-center rounded-full border-4 border-zinc-400">
+                        <DogIcon className="size-10" />
+                      </div>
+                      <div>
+                        <h2 className="text-xl font-bold md:text-2xl">
+                          Clínicas de estética
+                        </h2>
+                        <p>Mais acessibilidade para tratamentos e pacotes.</p>
+                      </div>
+                    </div>{' '}
+                  </div>
                 </p>
               </Reveal>
             </div>
-
-            <Reveal classes="sticky top-[30rem]">
-              <Link
-                to="/cadastro-loja.pdf"
-                target="_blank"
-                className={cn(
-                  'text-md flex shrink-0 items-center justify-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0 md:mt-5',
-                )}
-                title="Clique para cadastrar minha empresa"
-              >
-                <PlusIcon className="mr-2 size-4" />
-                Quero mais vendas!
-              </Link>
-            </Reveal>
           </div>
+
+          <Reveal classes="">
+            <Link
+              to="https://api.whatsapp.com/send?phone=554131954559"
+              target="_blank"
+              className={cn(
+                'text-md flex shrink-0 items-center justify-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0 md:mt-5',
+              )}
+              title="Clique para cadastrar minha empresa"
+            >
+              <PlusIcon className="mr-2 size-4" />
+              Quero mais vendas!
+            </Link>
+          </Reveal>
 
           <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
             <Reveal>
@@ -207,7 +249,7 @@ export function CreditoParaEmpresaPage() {
           <div className="mt-12 flex justify-center">
             <Reveal classes="w-full md:w-auto">
               <Link
-                to="/cadastro-loja.pdf"
+                to="https://api.whatsapp.com/send?phone=554131954559"
                 target="_blank"
                 className={cn(
                   'text-md flex w-full shrink-0 items-center justify-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:w-auto',
@@ -260,9 +302,12 @@ export function CreditoParaEmpresaPage() {
                     1
                   </div>
                   <p>
-                    Faça seu cadastro <br />
-                    Acesse nosso site, clique na aba para lojistas e preencha o
-                    formulário com seus dados.
+                    <strong className="text-lg text-zinc-800">
+                      Faça seu cadastro
+                    </strong>{' '}
+                    <br />
+                    Clique no botão &quot;Quero oferecer crédito&quot; e fale
+                    com um de nossos especialistas.
                   </p>
                 </div>
               </div>
@@ -273,7 +318,10 @@ export function CreditoParaEmpresaPage() {
                     2
                   </div>
                   <p>
-                    Envie sua documentação <br />
+                    <strong className="text-lg text-zinc-800">
+                      Envie sua documentação
+                    </strong>{' '}
+                    <br />
                     Anexe os documentos necessários diretamente na plataforma de
                     forma simples e segura.
                   </p>
@@ -289,7 +337,10 @@ export function CreditoParaEmpresaPage() {
                   3
                 </div>
                 <p>
-                  Aguarde nossa análise <br />
+                  <strong className="text-lg text-zinc-800">
+                    Aguarde nossa análise
+                  </strong>{' '}
+                  <br />
                   Nossa equipe avaliará suas informações e entrará em contato
                   rapidamente para dar início à parceria.
                 </p>
@@ -304,7 +355,8 @@ export function CreditoParaEmpresaPage() {
                   4
                 </div>
                 <p className="font-semibold text-zinc-600 lg:text-xl">
-                  Aumente suas vendas <br />
+                  <strong className="text-zinc-800">Aumente suas vendas</strong>{' '}
+                  <br />
                   Com a Ucred, sua empresa oferece parcelamento aos clientes e
                   recebe o valor à vista, sem preocupação com inadimplência.
                 </p>
@@ -312,7 +364,7 @@ export function CreditoParaEmpresaPage() {
 
               <Reveal>
                 <Link
-                  to="/cadastro-loja.pdf"
+                  to="https://api.whatsapp.com/send?phone=554131954559"
                   target="_blank"
                   className={cn(
                     'text-md mt-5 flex shrink-0 items-center justify-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0',
@@ -506,7 +558,7 @@ export function CreditoParaEmpresaPage() {
 
             <Reveal>
               <Link
-                to="/cadastro-loja.pdf"
+                to="https://api.whatsapp.com/send?phone=554131954559"
                 target="_blank"
                 className="text-md mt-6 inline-flex items-center rounded-xl bg-white px-8 py-3 text-primary transition-all hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white"
                 title="Clique para ser um parceiro UCRED"
@@ -524,7 +576,7 @@ export function CreditoParaEmpresaPage() {
                   <br />
                   <br />
                   Jamais solicitamos pagamentos prévios para fechar contrato.
-                  Caso ocorrs, não conclua a negociação e denuncie em nossos
+                  Caso ocorra, não conclua a negociação e denuncie em nossos
                   canais oficiais.
                 </p>
               </div>

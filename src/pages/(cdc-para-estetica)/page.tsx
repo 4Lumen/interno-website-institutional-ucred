@@ -128,7 +128,7 @@ export function CreditoParaEsteticaPage() {
 
             <Reveal>
               <Link
-                to="/cadastro-loja.pdf"
+                to="https://api.whatsapp.com/send?phone=554131954559"
                 target="_blank"
                 className={cn(
                   'text-md flex shrink-0 items-center justify-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0 md:mt-5',
@@ -199,7 +199,7 @@ export function CreditoParaEsteticaPage() {
           <div className="mt-12 flex justify-center">
             <Reveal classes="w-full md:w-auto">
               <Link
-                to="/cadastro-loja.pdf"
+                to="https://api.whatsapp.com/send?phone=554131954559"
                 target="_blank"
                 className={cn(
                   'text-md flex w-full shrink-0 items-center justify-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:w-auto',
@@ -252,9 +252,12 @@ export function CreditoParaEsteticaPage() {
                     1
                   </div>
                   <p>
-                    Faça seu cadastro <br />
-                    Acesse nosso site, clique na aba para lojistas e preencha o
-                    formulário com seus dados.
+                    <strong className="text-lg text-zinc-800">
+                      Faça seu cadastro
+                    </strong>{' '}
+                    <br />
+                    Clique no botão &quot;Quero oferecer crédito&quot; e fale
+                    com um de nossos especialistas.
                   </p>
                 </div>
               </div>
@@ -265,7 +268,10 @@ export function CreditoParaEsteticaPage() {
                     2
                   </div>
                   <p>
-                    Envie sua documentação <br />
+                    <strong className="text-lg text-zinc-800">
+                      Envie sua documentação
+                    </strong>{' '}
+                    <br />
                     Anexe os documentos necessários diretamente na plataforma de
                     forma simples e segura.
                   </p>
@@ -281,7 +287,11 @@ export function CreditoParaEsteticaPage() {
                   3
                 </div>
                 <p>
-                  Aguarde nossa análise <br />
+                  <strong className="text-lg text-zinc-800">
+                    {' '}
+                    Aguarde nossa análise
+                  </strong>{' '}
+                  <br />
                   Nossa equipe avaliará suas informações e entrará em contato
                   rapidamente para dar início à parceria.
                 </p>
@@ -296,7 +306,8 @@ export function CreditoParaEsteticaPage() {
                   4
                 </div>
                 <p className="font-semibold text-zinc-600 lg:text-xl">
-                  Aumente suas vendas <br />
+                  <strong className="text-zinc-800">Aumente suas vendas</strong>{' '}
+                  <br />
                   Com a Ucred, sua clínica oferece parcelamento aos clientes e
                   recebe o valor à vista, sem preocupação com inadimplência.
                 </p>
@@ -304,7 +315,7 @@ export function CreditoParaEsteticaPage() {
 
               <Reveal>
                 <Link
-                  to="/cadastro-loja.pdf"
+                  to="https://api.whatsapp.com/send?phone=554131954559"
                   target="_blank"
                   className={cn(
                     'text-md mt-5 flex shrink-0 items-center justify-center whitespace-nowrap rounded-xl bg-primary px-8 py-3 text-white transition-all hover:hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white md:mt-0',
@@ -510,7 +521,7 @@ export function CreditoParaEsteticaPage() {
 
             <Reveal>
               <Link
-                to="/cadastro-loja.pdf"
+                to="https://api.whatsapp.com/send?phone=554131954559"
                 target="_blank"
                 className="text-md mt-6 inline-flex items-center rounded-xl bg-white px-8 py-3 text-primary transition-all hover:bg-gradient-to-r hover:from-secondary-1 hover:via-secondary-3 hover:to-secondary-4 hover:text-white"
                 title="Clique para ser um parceiro UCRED"
@@ -528,7 +539,7 @@ export function CreditoParaEsteticaPage() {
                   <br />
                   <br />
                   Jamais solicitamos pagamentos prévios para fechar contrato.
-                  Caso ocorrs, não conclua a negociação e denuncie em nossos
+                  Caso ocorra, não conclua a negociação e denuncie em nossos
                   canais oficiais.
                 </p>
               </div>

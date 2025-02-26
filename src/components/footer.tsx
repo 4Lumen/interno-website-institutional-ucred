@@ -6,6 +6,7 @@ import {
   Loader2,
   MailIcon,
   PhoneIcon,
+  SendHorizonal,
   SendHorizonalIcon,
 } from 'lucide-react'
 import { useRef, useState } from 'react'
@@ -15,6 +16,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { z } from 'zod'
 
 import { cn } from '../@config/lib/cn'
+import { generateSuccessNotification } from '../@config/utils/generate-notification'
 import { Reveal } from './reveal'
 import {
   Accordion,
@@ -44,12 +46,17 @@ export function Footer() {
   const refData: any = useRef()
   const refDataButton: any = useRef()
 
+  const [email, setEmail] = useState('')
+
   const [hasToggleData, setHasToggleData] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
 
   const form = useForm({
     resolver: zodResolver<z.infer<typeof formContactSchema>>(formContactSchema),
   })
+
+  const [hasLoadingSaveNewsletter, setHasLoadingSaveNewsletter] =
+    useState(false)
 
   const onSubmit = (data: z.infer<typeof formContactSchema>) => {
     setIsLoading(true)
@@ -74,6 +81,29 @@ export function Footer() {
 
     document.body.appendChild(form)
     form.submit()
+  }
+
+  const handleNewsletter = async () => {
+    const data = {
+      email,
+    }
+    setHasLoadingSaveNewsletter(true)
+
+    await fetch(
+      'https://script.google.com/a/macros/rpdesenvolvimentos.com.br/s/AKfycbxjgGBx8222-fIj4SOPVB3SPwP55A_XWyzbRQ002jIpi_n_zldFksl16CJZHm131y4AHA/exec',
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+        mode: 'no-cors',
+      },
+    ).finally(() => {
+      setHasLoadingSaveNewsletter(false)
+      setEmail('')
+      generateSuccessNotification({
+        text: 'Seu e-mail foi cadastrado na nossa Newsletter',
+      })
+    })
   }
 
   return (
@@ -101,11 +131,11 @@ export function Footer() {
                   <p className="text-lg font-medium text-primary">
                     Acesse{' '}
                     <Link
-                      to="www.ucred.net.br"
+                      to="https://www5.ucred.net.br/"
                       target="_blank"
                       className="underline underline-offset-2"
                     >
-                      www.ucred.net.br
+                      https://www5.ucred.net.br/
                     </Link>{' '}
                     e faça uma simulação preenchendo o valor e quantidade de
                     parcelas desejadas. <br />
@@ -211,14 +241,7 @@ export function Footer() {
                       <div className="shrink-0 rounded-lg bg-primary p-3 text-white">
                         <PhoneIcon className="size-4" />
                       </div>
-                      <h2 className="text-lg font-medium">(41) 99946-0468</h2>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                      <div className="shrink-0 rounded-lg bg-primary p-3 text-white">
-                        <PhoneIcon className="size-4" />
-                      </div>
-                      <h2 className="text-lg font-medium">(41) 99801-0077</h2>
+                      <h2 className="text-lg font-medium">(41) 3195-4559</h2>
                     </div>
 
                     <div className="flex items-center gap-2">
@@ -226,7 +249,7 @@ export function Footer() {
                         <MailIcon className="size-4" />
                       </div>
                       <h2 className="text-lg font-medium">
-                        cobranca@ucredit.com.br
+                        contato@ucred.net.br
                       </h2>
                     </div>
                   </div>
@@ -268,14 +291,7 @@ export function Footer() {
                       <div className="shrink-0 rounded-lg bg-primary p-3 text-white">
                         <PhoneIcon className="size-4" />
                       </div>
-                      <h2 className="text-lg font-medium">(41) 99946-0211</h2>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                      <div className="shrink-0 rounded-lg bg-primary p-3 text-white">
-                        <PhoneIcon className="size-4" />
-                      </div>
-                      <h2 className="text-lg font-medium">(41) 99525-0294</h2>
+                      <h2 className="text-lg font-medium">(41) 3195-4559</h2>
                     </div>
 
                     <div className="flex items-center gap-2">
@@ -283,7 +299,7 @@ export function Footer() {
                         <MailIcon className="size-4" />
                       </div>
                       <h2 className="text-lg font-medium">
-                        administrativo@ucredit.com.br
+                        contato@ucred.net.br
                       </h2>
                     </div>
                   </div>
@@ -670,12 +686,35 @@ export function Footer() {
                 Receba as últimas novidades
               </p>
 
-              <input
-                disabled
-                type="text"
-                placeholder="Digite seu melhor e-mail"
-                className="mt-3 h-10 rounded-md bg-primary-lighter px-4 text-sm text-zinc-200 outline-none transition-all placeholder:text-sm focus:ring-4 focus:ring-primary-lighter md:w-full"
-              />
+              <div className="mt-3 flex items-center gap-2">
+                <input
+                  type="text"
+                  value={email}
+                  onKeyDown={(e) => {
+                    if (e.code === 'Enter') {
+                      handleNewsletter()
+                    }
+                  }}
+                  placeholder="Digite seu e-mail"
+                  disabled={hasLoadingSaveNewsletter}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="h-10 rounded-md bg-primary-lighter px-4 text-sm text-zinc-200 outline-none transition-all placeholder:text-sm focus:ring-4 focus:ring-white md:w-full"
+                />
+
+                <Button
+                  size="icon"
+                  type="button"
+                  onClick={handleNewsletter}
+                  disabled={email === '' || hasLoadingSaveNewsletter}
+                  className="size-10 shrink-0 bg-white transition-all hover:bg-white hover:brightness-75"
+                >
+                  {hasLoadingSaveNewsletter ? (
+                    <Loader2 className="size-4 animate-spin" />
+                  ) : (
+                    <SendHorizonal className="size-4" />
+                  )}
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -769,12 +808,12 @@ export function Footer() {
           Powered by
           <span className="ml-1">
             <Link
-              to="/"
+              to="https://4lumen.com"
               target="_blank"
               className="underline underline-offset-2"
             >
               {' '}
-              RP Desenvolvimentos & 4Lumen
+              4Lumen
             </Link>
           </span>
         </div>

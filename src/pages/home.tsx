@@ -1,7 +1,6 @@
 import {
   BuildingIcon,
   CalendarCheckIcon,
-  CheckCheckIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
   ClockIcon,
@@ -368,20 +367,6 @@ export function Home() {
 
                     <p className="text-xl font-bold text-zinc-600/80">
                       Aprovação em até <br /> 10 minutos pela mesa
-                    </p>
-                  </div>
-                </Reveal>
-              </SwiperSlide>
-
-              <SwiperSlide className="rounded-xl border-2 border-[#DDDDDD] bg-[#F8F8F8] text-primary">
-                <Reveal>
-                  <div className="flex flex-col items-start gap-2 px-5 py-10">
-                    <div className="flex size-12 items-center justify-center rounded-lg bg-primary-lighter text-white">
-                      <CheckCheckIcon className="size-6" />
-                    </div>
-
-                    <p className="text-xl font-bold text-zinc-600/80">
-                      Pré análise para <br /> aprovação de crédito
                     </p>
                   </div>
                 </Reveal>
